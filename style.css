@@ -4,6 +4,7 @@
     --teciary-color: #03422F;
     --quaternary-color: #5D5D5D;
     --quinary-color: #DE3535;
+    --setery-color: #FFFFFF;
 
     --fonte-primaria: 'Nunito', arial, sans-serif;
 }
@@ -17,4 +18,21 @@
 body {
     background-color: var(--primary-color);
     font-family: "Nunito", arial, sans-serif;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background-image: url(/assets/ComunsReutilizaveis/Header_Fundo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    width: 14%;
+    margin: 0% 0 0 3%;
+    position: absolute;
+    top: 5px;
 }

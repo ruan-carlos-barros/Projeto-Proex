@@ -5,7 +5,7 @@
     padding: 0% 29%;
     width: 100%;
     color: var(--primary-color);
-    font-size: 0.7rem;   
+    font-size: 0.8rem;     
 }
 
 .inicio {
@@ -14,4 +14,69 @@
 
 .sobre {
     opacity: 0.7;
+}
+
+.titulo {
+    color: var(--tertiary-color);
+    font-weight: 700;
+    font-size: 2.1875rem;
+    font-family: var(--fonte-primaria);
+    opacity: 1;
+    margin-left: 5.4%;
+    margin-top: 3%;
+}
+
+h2 {
+    margin-left: 5.4%;
+    font-size: 22px;
+    color: var(--teciary-color);
+    font-weight: 700;
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-left: 5.4%;
+    color: var(--teciary-color);
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+h4 {
+    margin-left: 5.4%;
+    font-size: 22px;
+    color: var(--tertiary-color);
+    font-weight: 400;
+    padding-bottom: 40px;
+}
+
+.linha {
+    border: 1px solid var(--linha-color);
+    width: 88%;
+    margin-left: 5.4%;
+    
+}
+
+.linha-top {
+    border: 1px solid var(--teciary-color);
+    width: 88%;
+    margin-left: 5.4%;
+    margin-top: 20px;
+}
+
+.medi-top {
+    margin-top: 25px;
+}
+
+.aproxi {
+    margin-bottom: -25px;
+}
+
+.aproxi2 {
+    margin-bottom: 25px;
+}
+
+.alterandoCor {
+    font-weight: 400;
 }

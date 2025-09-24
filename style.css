@@ -33,8 +33,10 @@ header {
 }
 
 .logo {
-    width: 14%;
-    margin: 0% 0 0 3%;
+    display: flex;
+    align-items: center;
+    width: 13%;
+    margin: 0 0 0 3%;
     position: absolute;
-    top: 5px;
+    top: 0.5rem;
 }

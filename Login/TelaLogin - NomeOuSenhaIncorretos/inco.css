@@ -20,7 +20,7 @@ main {
     margin-top: 5%;
     box-shadow: 0rem 0rem 0.325rem black;
     border-radius: 1rem;
-    padding: 7% 2.7% 3.75% 2.7%;
+    padding: 6% 2.7% 2.8% 2.7%;
 }
 
 .identificacao {
@@ -88,12 +88,12 @@ main {
 
 .ou {
     margin-top: 25px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--teciary-color);
 }
 
 .google {
-    margin-top: 35px;
+    margin-top: 25px;
     font-size: 1.2rem;
     font-family: var(--fonte-primaria);
     padding: 15px 11.5rem;

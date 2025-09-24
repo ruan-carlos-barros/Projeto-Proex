@@ -20,14 +20,14 @@ main {
     margin-top: 5%;
     box-shadow: 0rem 0rem 0.325rem black;
     border-radius: 1rem;
-    padding: 7% 2.7% 7% 2.7%;
+    padding: 6% 2.7% 6% 2.7%;
 }
 
 .identificacao {
     font-size: 1.3rem;
     color: var(--teciary-color);
     margin-bottom: 20px;
-    padding: 13px 13rem 13px 4rem;
+    padding: .8125rem 13rem .8125rem 4rem;
     border: 3px solid var(--secondary-color);
     border-radius: 0.7rem;
     background-image: url(/assets/LoginSvgGeral/Reutilizaveis/usuario.svg);
@@ -90,14 +90,15 @@ main {
 
 .ou {
     margin-top: 25px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--teciary-color);
 }
 
 .google {
-    margin-top: 35px;
+    margin-top: 25px;
     font-size: 1.2rem;
     font-family: var(--fonte-primaria);
+    font-weight: 549;
     padding: 15px 11.5rem;
     border: none;
     border-radius: 0.7rem;

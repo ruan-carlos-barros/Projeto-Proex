@@ -19,7 +19,7 @@
 }
 
 .sobre {
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .ficha {
@@ -65,7 +65,7 @@ h4 {
     border: 1px solid var(--linha-color);
     width: 88%;
     margin-left: 5.4%;
-    
+
 }
 
 .linha-top {

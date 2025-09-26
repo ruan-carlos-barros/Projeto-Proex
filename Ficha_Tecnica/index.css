@@ -1,33 +1,6 @@
-.header_div {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 0% 29%;
-    width: 100%;
-    color: var(--primary-color);
-    opacity: 0.8;
-    font-size: 0.8rem;
-}
 
 main {
     padding: 44px 100px 76px 100px;
-}
-
-.inicio {
-    cursor: pointer;
-}
-
-.inicio:hover {
-    color: aliceblue;
-    opacity: 1;
-}
-
-.sobre {
-    cursor: pointer;
-}
-
-.ficha {
-    cursor: pointer;
 }
 
 .titulo {

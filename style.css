@@ -6,8 +6,11 @@
     --quinary-color: #DE3535;
     --setery-color: #FFFFFF;
     --tertiary-color: #676767;
+    --cor-parafrafo: #999999;
+    --cor-titulo: #2F735E;
     --linha-color: #27A36D87;
     --linha2-color: #79C14E;
+    --border-video: #26AA86;
 
     --fonte-primaria: 'Nunito', arial, sans-serif;
 }
@@ -23,10 +26,14 @@ body {
     font-family: "Nunito", arial, sans-serif;
 }
 
+
+/* Header geral - css || Para as paginas que contem o conteudo "inicio", "Ficha Tecnica" e "Sobre" */
+
 header {
     display: flex;
     width: 100%;
     height: 10vh;
+    padding: 4px 57.04px 4px 40px;
     background-image: url(/assets/ComunsReutilizaveis/Header_Fundo.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,10 +44,38 @@ header {
     display: flex;
     align-items: center;
     width: 13%;
-    margin: 0 0 0 3%;
     position: absolute;
     top: 0.5rem;
 }
+
+.header_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0% 29%;
+    width: 100%;
+    color: var(--primary-color);
+    opacity: 0.8;
+    font-size: 0.8rem;
+}
+
+.inicio {
+    cursor: pointer;
+}
+
+.inicio:hover {
+    color: aliceblue;
+    opacity: 1;
+}
+
+.ficha {
+    cursor: pointer;
+}
+
+.sobre {
+    cursor: pointer;
+}
+
 
 /* Footer geral - css */
 

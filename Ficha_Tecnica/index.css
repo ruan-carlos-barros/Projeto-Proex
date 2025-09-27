@@ -1,29 +1,6 @@
-.header_div {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 0% 29%;
-    width: 100%;
-    color: var(--primary-color);
-    opacity: 0.8;
-    font-size: 0.8rem;
-}
 
-.inicio {
-    cursor: pointer;
-}
-
-.inicio:hover {
-    color: aliceblue;
-    opacity: 1;
-}
-
-.sobre {
-    cursor: pointer;
-}
-
-.ficha {
-    cursor: pointer;
+main {
+    padding: 44px 100px 76px 100px;
 }
 
 .titulo {
@@ -32,12 +9,9 @@
     font-size: 2.1875rem;
     font-family: var(--fonte-primaria);
     opacity: 1;
-    margin-left: 5.4%;
-    margin-top: 3%;
 }
 
 h2 {
-    margin-left: 5.4%;
     font-size: 1.375rem;
     color: var(--teciary-color);
     font-weight: 700;
@@ -47,14 +21,12 @@ h2 {
 
 h3 {
     font-size: 22px;
-    margin-left: 5.4%;
     color: var(--teciary-color);
     font-weight: 400;
     padding-bottom: 15px;
 }
 
 h4 {
-    margin-left: 5.4%;
     font-size: 1.375rem;
     color: var(--tertiary-color);
     font-weight: 400;
@@ -63,15 +35,12 @@ h4 {
 
 .linha {
     border: 1px solid var(--linha-color);
-    width: 88%;
-    margin-left: 5.4%;
-
+    width: 100%;
 }
 
 .linha-top {
     border: 1px solid var(--teciary-color);
-    width: 88%;
-    margin-left: 5.4%;
+    width: 100%;
     margin-top: 20px;
 }
 
@@ -90,3 +59,4 @@ h4 {
 .alterandoCor {
     font-weight: 400;
 }
+

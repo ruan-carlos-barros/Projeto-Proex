@@ -6,7 +6,11 @@
     --quinary-color: #DE3535;
     --setery-color: #FFFFFF;
     --tertiary-color: #676767;
+    --cor-parafrafo: #999999;
+    --cor-titulo: #2F735E;
     --linha-color: #27A36D87;
+    --linha2-color: #79C14E;
+    --border-video: #26AA86;
 
     --fonte-primaria: 'Nunito', arial, sans-serif;
 }
@@ -22,10 +26,14 @@ body {
     font-family: "Nunito", arial, sans-serif;
 }
 
+
+/* Header geral - css || Para as paginas que contem o conteudo "inicio", "Ficha Tecnica" e "Sobre" */
+
 header {
     display: flex;
     width: 100%;
     height: 10vh;
+    padding: 4px 57.04px 4px 40px;
     background-image: url(/assets/ComunsReutilizaveis/Header_Fundo.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,7 +44,81 @@ header {
     display: flex;
     align-items: center;
     width: 13%;
-    margin: 0 0 0 3%;
     position: absolute;
     top: 0.5rem;
+}
+
+.header_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0% 29%;
+    width: 100%;
+    color: var(--primary-color);
+    opacity: 0.8;
+    font-size: 0.8rem;
+}
+
+.inicio {
+    cursor: pointer;
+}
+
+.inicio:hover {
+    color: aliceblue;
+    opacity: 1;
+}
+
+.ficha {
+    cursor: pointer;
+}
+
+.sobre {
+    cursor: pointer;
+}
+
+
+/* Footer geral - css */
+
+.footer {
+    background-color: var(--setery-color);
+    width: 100%;
+}
+
+.DivGeralFooter {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 2.1875rem 2.5rem 2.4375rem 2.5rem;
+    box-shadow: 0rem 0rem 0.225rem var(--tertiary-color);
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    color: var(--teciary-color);
+}
+
+.redes {
+    align-items: center;
+}
+
+.linha_2 {
+    border: .0625rem solid var(--linha2-color);
+    width: 105%;
+    margin-bottom: .75rem;
+}
+
+h5 {
+    font-weight: 700;
+    margin-bottom: .75rem;
+}
+
+h6 {
+    font-weight: 400;
+    font-size: 0.85rem;
+}
+
+.instagram {
+    width: 100%;
 }

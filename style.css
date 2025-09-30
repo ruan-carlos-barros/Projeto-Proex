@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Arial Rounded MT';
+    src: url('/fonts/ArialRoundedMTBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --primary-color: #F9FFF9;
     --secondary-color: #2F735E;
@@ -12,8 +20,9 @@
     --linha2-color: #79C14E;
     --border-video: #26AA86;
 
-    --fonte-primaria: 'Nunito', arial, sans-serif;
+    --fonte-primaria: 'ArialRoundedMT', Arial, sans-serif;
 }
+
 
 * {
     margin: 0;

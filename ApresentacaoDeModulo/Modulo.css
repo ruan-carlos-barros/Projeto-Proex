@@ -1,22 +1,22 @@
 main {
     display: flex;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 3.4375rem 12rem 9.375rem 9.5625rem;
+    font-family: var(--fonte-primaria);
+    padding: 5.5rem 12rem 9.375rem 9.5625rem;
     width: 100%;
-    min-height: 90vh;
 }
 
 .container {
     display: flex;
     justify-content: space-between; 
-    width: 100%;
+    width: 95%;
 }
 
 .video {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 2%;
 }
 
 .titulo {
@@ -34,10 +34,10 @@ main {
 }
 
 .aula {
-    width: 634px;
-    height: 344px;
-    border-radius: 15px;
-    border: 3px solid var(--border-video);
+    width: 55rem;
+    height: 30rem;
+    border-radius: .9375rem;
+    border: .1875rem solid var(--border-video);
 }
 
 p {

@@ -1,34 +1,45 @@
+/* Main */
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--cor-primaria);
-    font-family: var(--fonte-secundaria);
-    padding: 1% 0 4% 0;
+    width: 100%;
     height: 100%;
+    padding: 1% 0 4% 0;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-primaria);
 }
+
+/* Cabeçalho */
 
 .cabecalho {
     width: 100%;
     height: 100%;
 }
 
+/* Login Box */
+
 .Login {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: auto;
     margin-top: 5%;
-    box-shadow: 0rem 0rem 0.325rem black;
-    border-radius: 1rem;
     padding: 6% 2.7% 2.8% 2.7%;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 0.325rem black;
 }
 
+/* Campos de input */
+
 .identificacao {
+    width: auto;
+    padding: 13px 14rem 13px 4rem;
+    margin-bottom: 20px;
     font-size: 1.3rem;
     color: var(--teciary-color);
-    margin-bottom: 20px;
-    padding: 13px 14rem 13px 4rem;
     border: 3px solid var(--quinary-color);
     border-radius: 0.7rem;
     background-image: url(/assets/LoginSvgGeral/Reutilizaveis/UsuarioNegado.svg);
@@ -38,44 +49,46 @@ main {
 }
 
 .senha-container {
-  position: relative;
-  width: 100%;
-  margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .senha {
-  width: 100%;
-  font-size: 1.3rem;
-  padding: 13px 10px 13px 65px; 
-  border: 3px solid var(--quinary-color);
-  border-radius: 0.7rem;
-  background-image: url(/assets/LoginSvgGeral/Reutilizaveis/unlockNegado.svg);
-  background-repeat: no-repeat;
-  background-size: 1.2rem;
-  background-position: 5% center; 
-  color: var(--secondary-color);
+    width: 100%;
+    padding: 13px 10px 13px 65px;
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    border: 3px solid var(--quinary-color);
+    border-radius: 0.7rem;
+    background-image: url(/assets/LoginSvgGeral/Reutilizaveis/unlockNegado.svg);
+    background-repeat: no-repeat;
+    background-size: 1.2rem;
+    background-position: 5% center;
 }
 
 .toggle-senha {
-  position: absolute;
-  top: 50%;
-  right: 10px;               
-  transform: translateY(-50%);
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 
+/* Botão principal */
+
 .botao {
-    font-size: 1.4rem;
-    padding: 15px 14rem;
     width: 100%;
+    padding: 15px 14rem;
+    font-size: 1.4rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    color: var(--primary-color);
     border: none;
     border-radius: 0.7rem;
     background-color: var(--secondary-color);
-    color: var(--primary-color);
-    font-family: var(--fonte-primaria);
-    font-weight: 400;
     cursor: pointer;
     background-image: url(/assets/LoginSvgGeral/Reutilizaveis/unlock.svg);
     background-repeat: no-repeat;
@@ -83,32 +96,35 @@ main {
     background-position: 36%;
 }
 
+/* Links e textos adicionais */
+
 .esqueci {
     margin-top: 25px;
     font-size: 1.2rem;
+    font-weight: 700;
     color: var(--secondary-color);
     cursor: pointer;
-    font-weight: 700;
 }
 
 .ou {
     margin-top: 25px;
     font-size: 1.3rem;
     font-weight: 700;
-
     color: var(--teciary-color);
 }
 
+/* Botão Google */
+
 .google {
     margin-top: 25px;
+    padding: 15px 11.5rem;
     font-size: 1.2rem;
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    padding: 15px 11.5rem;
+    color: var(--quaternary-color);
     border: none;
     border-radius: 0.7rem;
     background-color: var(--primary-color);
-    color: var(--quaternary-color);
     cursor: pointer;
     box-shadow: 0rem 0rem 0.325rem var(--quaternary-color);
     background-image: url(/assets/LoginSvgGeral/Reutilizaveis/google.svg);
@@ -116,6 +132,8 @@ main {
     background-size: 2rem;
     background-position: 3%;
 }
+
+/* Mensagens de erro */
 
 .mensagem-erro {
     width: 100%;
@@ -126,11 +144,11 @@ main {
 
 .Incorreto {
     margin-top: 20px;
-    padding: 2% 0% 2% 7%;
+    padding: 2% 0 2% 7%;
     font-size: 1.1rem;
-    color: var(--quinary-color);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
+    color: var(--quinary-color);
     background-image: url(/assets/LoginSvgGeral/Reutilizaveis/X.svg);
     background-position: 0% 50%;
     background-repeat: no-repeat;

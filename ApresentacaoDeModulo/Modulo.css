@@ -1,35 +1,29 @@
+/* Main */
+
 main {
     display: flex;
+    width: 100%;
+    padding: 5.5rem 12rem 9.375rem 9.5625rem;
     align-items: center;
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    padding: 5.5rem 12rem 9.375rem 9.5625rem;
-    width: 100%;
 }
+
+/* Container */
 
 .container {
     display: flex;
-    justify-content: space-between; 
     width: 95%;
+    justify-content: space-between;
 }
+
+/* Vídeo */
 
 .video {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 2%;
-}
-
-.titulo {
-    color: var(--cor-titulo);
-    font-size: 2.25rem;
-    margin-bottom: 3.4375rem;
-}
-
-.paragrafo {
-    color: var(--cor-parafrafo);
-    font-size: 16px;
-    margin-bottom: 15px;
 }
 
 .aula {
@@ -39,12 +33,22 @@ main {
     border: .1875rem solid var(--border-video);
 }
 
-p {
-    color: var(--cor-parafrafo);
-    font-size: 16px;
+/* Títulos e texto */
+
+.titulo {
+    font-size: 2.25rem;
+    color: var(--cor-titulo);
+    margin-bottom: 3.4375rem;
 }
 
-/* Botões */
+.paragrafo,
+p {
+    font-size: 1rem;
+    color: var(--cor-parafrafo);
+    margin-bottom: .9375rem;
+}
+
+/* Botões */
 
 .botao {
     display: flex;
@@ -54,27 +58,27 @@ p {
 }
 
 .continuar {
-    padding: 14px 0;
-    margin-bottom: 26px;
+    padding: .875rem 0;
+    margin-bottom: 1.625rem;
+    font-size: 1.125rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
     color: var(--setery-color);
     background-color: var(--cor-titulo);
     border: none;
-    border-radius: 10px;
-    font-size: 18px;
-    font-family: var(--fonte-primaria);
-    font-weight: 400;
+    border-radius: .625rem;
 }
 
 .ebook {
-    padding: 14px 0;
-    color: var(--cor-titulo);
-    border: 3px solid var(--cor-titulo);
-    border-radius: 10px;
-    font-size: 18px;
+    padding: .875rem 0;
+    font-size: 1.125rem;
     font-family: var(--fonte-primaria);
     font-weight: 400;
+    color: var(--cor-titulo);
+    border: .1875rem solid var(--cor-titulo);
+    border-radius: .625rem;
 }
 
 .download {
-    margin-left: 12px;
+    margin-left: .75rem;
 }

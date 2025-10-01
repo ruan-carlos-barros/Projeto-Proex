@@ -1,0 +1,30 @@
+@import url("style.css");
+
+body {
+    background-image: url("../../assets/Sobre/fundo.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cor_equipe {
+    background-color: #0C4A49;
+    height: 100vh;
+    width: 12.57rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nossa_equipe {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4.375rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    writing-mode: sideways-lr;
+    text-orientation: upright;
+    white-space: nowrap;
+}

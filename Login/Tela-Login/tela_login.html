@@ -6,27 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="/Login/Tela-Login/tela_login.css">
+    <link rel="stylesheet" href="/Login/login_global.css">
     <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
 
-    <header>
-        <img class="logo" src="/assets/ComunsReutilizaveis/Logo_UEA.svg" alt="logo">
-    </header>
+    <header class="basic"></header>
 
-    <main>
+    <main class="login-formulario">
         <div class="Login">
+            <img class="logo_login" src="/assets/LoginSvgGeral/Reutilizaveis/image 1.svg" alt="logo">
             <input class="identificacao" type="text" placeholder="Identificação ou E-mail">
 
             <div class="senha-container">
                 <input class="senha" type="password" placeholder="Senha">
-                <img src="/assets/LoginSvgGeral/Reutilizaveis/Visualizar.svg" alt="Mostrar senha" class="toggle-senha">
+                <img class="toggle-senha" src="/assets/LoginSvgGeral/Reutilizaveis/Visualizar.svg" alt="Mostrar senha">
             </div>
 
             <button class="botao">Acessar</button>
             <h2 class="esqueci">Esqueceu a senha?</h2>
-            <h3 class="ou">Autenticar usando sua conta em:</h3>
+            <div class="linha"></div>
+            <h3 class="Autenticar">Autenticar usando sua conta em:</h3>
             <button class="google">Entrar com Google</button>
         </div>
     </main>

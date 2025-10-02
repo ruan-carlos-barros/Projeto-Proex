@@ -1,21 +1,28 @@
 /* Main */
 
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 1% 0 4% 0;
+
+    width: 100vw; 
+    height: 100vh;  
+
     font-family: var(--fonte-secundaria);
     color: var(--cor-primaria);
 }
 
-/* Cabeçalho */
-
-.cabecalho {
+table {
     width: 100%;
     height: 100%;
+    border-collapse: collapse;
 }
 
 /* Login Box */

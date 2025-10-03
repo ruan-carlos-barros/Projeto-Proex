@@ -39,6 +39,16 @@ body {
     height: 100%;
 }
 
+/* Header Basic - Contém só o background image || Exemplo de Tela -- Login -- | */
+
+.basic {
+    display: flex;
+    height: 10vh;
+    background-image: url(/assets/ComunsReutilizaveis/Header_Fundo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 /* Header geral - css || Para as paginas que contem o conteudo "inicio", "Ficha Tecnica" e "Sobre" */
 

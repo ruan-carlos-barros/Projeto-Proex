@@ -14,6 +14,10 @@ body {
     width: 201px;
     height: 100%;
     position: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #nossa_equipe {
@@ -25,12 +29,4 @@ body {
 
     transform: rotate(-90deg);
     white-space: nowrap;
-
-
-    position: absolute;
-    top: 67%;
-    left: 1.23%;
-    text-align: center;
-    width: 200px;
-
 }

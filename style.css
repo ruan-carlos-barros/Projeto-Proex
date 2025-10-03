@@ -19,6 +19,7 @@
     --cor-parafrafo: #999999;
     --cor-titulo: #2F735E;
     --linha-color: #27A36D87;
+    --cor-sobre-nossa-equipe: #0C4A49;
     --linha2-color: #79C14E;
     --border-video: #26AA86;
 
@@ -131,3 +132,18 @@ h6 {
 .instagram {
     width: 100%;
 }
+
+/* Computadores com telas grandes */
+@media (min-width: 1281px) {}
+
+/* Notbooks */
+@media (min-width: 1025px) {}
+
+/* Tela de Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/* Celulares com tamanho Médio */
+@media (max-width: 767px) {}
+
+/* Celulares Pequenos */
+@media (max-width: 480px) {}

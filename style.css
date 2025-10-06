@@ -164,7 +164,7 @@ body {
     font-size: 1.5rem;
 }
 
-/* Footer geral */
+/* Footer normal || Para paginas que contém informacoes || Exemplo -- Ficha Tecnica e sobre.  */
 
 .footer {
     width: 100%;
@@ -225,3 +225,39 @@ h6 {
 
 /* Celulares Pequenos */
 @media (max-width: 480px) {}
+
+
+/* Footer Diferente || Para paginas que outras informacoes || Exemplo -- Pagina inicial e painel  */
+
+.footer-pag-inicial {
+    font-family: var(--fonte-secundaria);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer-pag-inicial-div {
+    display: flex;
+    background-color: var(--secondary-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.img-pag-inicial {
+    width: 95%;
+}
+
+.footer-pag-final-div {
+    color: var(--teciary-color);
+    padding: 5.125rem 0 4.3125rem 6.75rem;
+}
+
+.espacado {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.teste {
+    margin: 0;  
+}

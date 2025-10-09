@@ -1,70 +1,83 @@
-/* Main */
-
 main {
-    padding: 2.75rem 6.25rem 4.75rem 6.25rem;
-    font-family: var(--fonte-secundaria);
+  padding: 3.7rem 6.25rem 4.75rem 6.25rem;
+  font-family: var(--fonte-secundaria);
+  color: var(--tertiary-color);
+  flex-wrap: wrap;
 }
-
-/* Títulos */
 
 .titulo {
-    font-size: 2.1875rem;
-    font-weight: 700;
-    color: var(--tertiary-color);
-    opacity: 1;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--tertiary-color);
+  margin-bottom: 1.5rem;
 }
 
-h2 {
-    padding-top: 2.5rem;
-    padding-bottom: .9375rem;
-    font-size: 1.375rem;
-    font-weight: 700;
-    color: var(--teciary-color);
+.ficha-item {
+  border-top: 2px solid var(--linha-color);
+  padding-top: 3.8rem;
+  padding-bottom: 3.8rem;
 }
 
-h3 {
-    padding-bottom: .9375rem;
-    font-size: 1.375rem;
+.teste {
+    border-top: 2px solid var(--teciary-color);
+}
+
+.ficha-item h2 {
+  font-weight: 700;
+  color: var(--teciary-color);
+  margin-bottom: 1.6rem;
+}
+
+.ficha-item p {
+  font-weight: 400;
+}
+
+.ficha-item dt {
+  color: var(--teciary-color); 
+  font-weight: 400;
+  margin-top: 3rem;
+}
+
+.ficha-item dd {
+  font-weight: 400;
+  padding-top: 1.2rem;
+}
+
+.ficha-item ul {
+  list-style-type: disc;
+}
+
+.ficha-item ul li {
+  list-style-type: none;
+}
+
+.ficha-item li {
+  margin-top: 1.2rem;
+}
+
+.ficha-item address {
+  margin-top: 1.2rem;
+  font-style: normal;
+}
+
+.licenca {
+  margin-top: 1.2rem;
+  font-weight: 400;
+}
+
+h2 .local {
     font-weight: 400;
-    color: var(--teciary-color);
 }
 
-h4 {
-    padding-bottom: 2.5rem;
-    font-size: 1.375rem;
-    font-weight: 400;
-    color: var(--tertiary-color);
+.ficha-item h2,
+.ficha-item p,
+.ficha-item ul,
+.ficha-item dt,
+.ficha-item dd,
+.ficha-item address {
+  font-size: 1.8em;
 }
 
-/* Linhas / separadores */
-
-.linha {
-    width: 100%;
-    border: .0625rem solid var(--linha-color);
-}
-
-.linha-top {
-    width: 100%;
-    margin-top: 1.25rem;
-    border: .0625rem solid var(--teciary-color);
-}
-
-/* Margens extras */
-
-.medi-top {
-    margin-top: 1.5625rem;
-}
-
-.aproxi {
-    margin-bottom: -1.5625rem;
-}
-
-.aproxi2 {
-    margin-bottom: 1.5625rem;
-}
-
-/* Alterando cor / peso da fonte */
-
-.alterandoCor {
-    font-weight: 400;
+.ficha-item img {
+  margin-top: 1rem;
 }

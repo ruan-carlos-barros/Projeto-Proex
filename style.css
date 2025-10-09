@@ -53,58 +53,56 @@ body {
 
 /* Header Intermediate -  Para as páginas que contém o conteudo "inicio", "Ficha Tecnica" e "Sobre" || Exemplo de Tela -- Ficha Tecnica -- */
 
-.intermediate {
-    display: flex;
-    width: 100%;
-    height: 10vh;
-    padding: .25rem 3.565rem .25rem 2.5rem;
-    justify-content: space-between;
-    font-family: var(--fonte-primaria);
-    font-weight: 400;
-    background-image: url(/assets/ComunsReutilizaveis/Header_Fundo.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 10vh;
+  padding: 0.25rem 3rem;
+  font-family: var(--fonte-primaria);
+  font-weight: 400;
+  background-image: url(/assets/ComunsReutilizaveis/Header_Fundo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: sticky;
+  top: 0;
 }
 
 .logo {
-    display: flex;
-    width: 13%;
-    align-items: center;
+  max-width: 13%;
 }
 
-.header_div {
-    display: flex;
-    width: 100%;
-    padding: 0% 20%;
-    justify-content: space-evenly;
-    align-items: center;
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 45%;   
 }
 
-.inicio,
-.ficha,
-.sobre {
-    color: var(--primary-color);
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 1.55rem;
+.nav-links a {
+  color: var(--primary-color);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.8rem;
 }
 
-.menu_div {
-    display: flex;
-    width: 13%;
-    justify-content: space-between; 
-    align-items: center;
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
 }
 
-.img-perfil {
-    width: 40%;
-}
-
+.img-perfil,
 .img-menu {
-    width: 25%;
+  max-width: 100%;
+  cursor: pointer;
+  border: none;
+  background: none;
 }
-
 
 /* Header Hard - Para as páginas que não contém o menu de navegação || Exemplo de Tela -- Tópico -- */
 
@@ -167,64 +165,77 @@ body {
 /* Footer normal || Para paginas que contém informacoes || Exemplo -- Ficha Tecnica e sobre.  */
 
 .footer {
+  background-color: var(--footer-bg-color);
+  color: var(--tertiary-color);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  padding: 3rem 3rem 4rem 3rem; 
+  font-family: var(--fonte-secundaria);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-logos img {
     width: 100%;
-    background-color: var(--setery-color);
-    font-family: var(--fonte-secundaria);
 }
 
-.DivGeralFooter {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2.1875rem 2.5rem 2.4375rem 2.5rem;
-    box-shadow: 0rem 0rem 0.225rem var(--tertiary-color);
+.footer-section h5 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--teciary-color);
+  font-size: 1.4rem;
 }
 
-.informacoes {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.3rem;
+.footer-section p {
+    font-weight: 400;
     color: var(--teciary-color);
 }
 
-.redes {
+.footer-section hr {
+  width: 100%;
+  border: 1px solid var(--linha-color);
+  margin-bottom: 0.5rem;
+}
+
+.footer-section p,
+.footer-section address,
+.footer-section ul {
+  font-size: 0.95rem;
+  line-height: 1.4rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  font-weight: 400;
+  color: var(--teciary-color);
+}
+
+.footer-section ul li {
+  margin-bottom: 0.4rem;
+}
+
+.footer-section.redes {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.linha_2 {
-    width: 105%;
-    margin-bottom: .75rem;
-    border: .0625rem solid var(--linha2-color);
-}
-
-h5 {
-    font-weight: 700;
-    margin-bottom: .75rem;
-}
-
-h6 {
-    font-weight: 400;
-    font-size: 0.85rem;
-}
-
 .instagram {
-    width: 100%;
+    justify-content: center;
+    width: 35%;
+    margin-top: 0.8rem;
 }
 
-/* Computadores com telas grandes */
-@media (min-width: 1281px) {}
-
-/* Notbooks */
-@media (min-width: 1025px) {}
-
-/* Tela de Tablets */
-@media (min-width: 768px) and (max-width: 1024px) {}
-
-/* Celulares com tamanho Médio */
-@media (max-width: 767px) {}
-
-/* Celulares Pequenos */
-@media (max-width: 480px) {}
+address {
+    font-style: normal;
+    font-weight: 400;
+    color: var(--teciary-color);
+}
 
 
 /* Footer Diferente || Para paginas que outras informacoes || Exemplo -- Pagina inicial e painel  */

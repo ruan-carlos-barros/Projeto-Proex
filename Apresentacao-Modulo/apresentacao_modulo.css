@@ -17,15 +17,15 @@ main {
     justify-content: center;
     width: 100%;
     height: 90vh;
-    padding: 5.5rem 2rem 9.375rem 2rem;
+    padding: 5rem 2rem 9.375rem 2rem;
 }
 
 /* Container */
 .container {
     display: flex;
     justify-content: space-between;
+    padding-left: 9.5625rem;
     flex-wrap: wrap;
-    gap: 2rem;
     width: 100%;
 }
 
@@ -34,7 +34,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1 1 55%;
+    width: 50%;
 }
 
 .video-apresentacao .titulo {
@@ -54,9 +54,8 @@ main {
 
 .aula {
     width: 100%;
-    max-width: 55rem;
-    aspect-ratio: 16/9;
-    border-radius: .9375rem;
+    aspect-ratio: 17/10;
+    border-radius: 1rem;
     border: .1875rem solid var(--border-video);
 }
 
@@ -66,14 +65,15 @@ main {
     flex-direction: column;
     justify-content: flex-end;
     gap: 1.5rem;
-    flex: 1 1 20%;
-    min-width: 17rem;
+    width: 30%;
+    margin-bottom: 5.5%;
+    margin-right: 4.5%;
 }
 
 .btn {
     padding: .875rem 0;
-    width: 55%;
-    font-size: 1.3rem;
+    width: 65%;
+    font-size: 1.4rem;
     font-family: var(--fonte-primaria);
     font-weight: 400;
     border-radius: .625rem;

@@ -8,8 +8,7 @@ html, body {
     flex-direction: column;
     align-items: center;  
 
-    min-height: 100vh;
-    width: 100vw;
+    max-height: 90vh;
     
     font-family: var(--fonte-secundaria);
     color: var(--cor-primaria);
@@ -23,16 +22,16 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: auto;
-    margin-top: 41px;
-    margin-bottom: 53px;
-    padding: 0 2.3125rem;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    padding: 0 3rem 3.5% 3rem;
     border-radius: 1rem;
     box-shadow: 0rem 0rem 0.325rem black;
 }
 
 .logo_login {
-    margin: 2.3125rem 0 1.75rem 0;
+    margin: 3rem 0;
+    width: 25%;
 }
 
 /* Campos de input */
@@ -40,10 +39,10 @@ html, body {
 .identificacao {
     width: 100%;
     padding: .8125rem 13rem .8125rem 4rem;
-    margin-bottom: .9375rem;
-    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
     color: var(--teciary-color);
-    border: .1875rem solid var(--secondary-color);
+    border: .12rem solid var(--secondary-color);
     border-radius: 0.7rem;
     background-image: url(/assets/LoginSvgGeral/Reutilizaveis/usuario.svg);
     background-repeat: no-repeat;
@@ -59,10 +58,10 @@ html, body {
 .senha {
     width: 100%;
     padding: .8125rem 1.5625rem .8125rem 4.0625rem;
-    font-size: 1.3rem;
-    margin-bottom: 1.0625rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
     color: var(--secondary-color);
-    border: .1875rem solid var(--secondary-color);
+    border: .12rem solid var(--secondary-color);
     border-radius: 0.7rem;
     background-image: url(/assets/LoginSvgGeral/Reutilizaveis/senha.svg);
     background-repeat: no-repeat;
@@ -72,11 +71,12 @@ html, body {
 
 .toggle-senha {
     position: absolute;
-    top: 50%;
+    top: 35%;
     right: .625rem;
     transform: translateY(-50%);
     width: 2.1875rem;
     height: 2.1875rem;
+    cursor: pointer;
 }
 
 /* Botão principal */
@@ -84,8 +84,8 @@ html, body {
 .botao {
     width: 100%;
     padding: .9375rem 14rem;
-    margin-bottom: 1.0625rem;
-    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
     font-family: var(--fonte-primaria);
     font-weight: 400;
     color: var(--primary-color);
@@ -103,32 +103,33 @@ html, body {
 /* Links e textos adicionais */
 
 .esqueci {
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: var(--secondary-color);
     cursor: pointer;
-    margin-bottom: 2.0625rem;
+    margin-bottom: 2.5rem;
 }
 
 .linha {
-    width: 25.8125rem;
-    height: 0.1rem;
-    background-color: var(--linha-color);
-    margin-bottom: 1.3125rem;
+    width: 100%;
+    height: 0.05rem;
+    background-color: var(--cor-parafrafo);
+    margin-bottom: 1.5rem;
 }
 
 .Autenticar {
-    font-size: 1.125rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: var(--teciary-color);
-    margin-bottom: .9375rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Botão Google */
 
 .google {
-    padding: .9375rem 11.5rem;
-    font-size: 1rem;
+    padding: 1.2rem 0;
+    width: 100%;
+    font-size: 1.3rem;
     font-family: var(--fonte-primaria);
     font-weight: 400;
     color: var(--quaternary-color);

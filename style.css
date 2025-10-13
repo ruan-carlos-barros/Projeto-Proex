@@ -23,6 +23,7 @@
     --linha2-color: #79C14E;
     --border-video: #26AA86;
     --border-hard: #26988680;
+    --cor-pg-inicial: #8C8C8C;
 
     --fonte-primaria: 'Arial Rounded MT', Arial, sans-serif;
     --fonte-secundaria: arial, sans-serif;
@@ -266,6 +267,7 @@ address {
 .espacado {
     font-weight: 400;
     font-size: 18px;
+    margin-bottom: 25px;
 }
 
 .teste {

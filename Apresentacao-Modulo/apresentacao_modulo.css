@@ -1,99 +1,125 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Fonte global */
-body, main {
+body {
     font-family: var(--fonte-primaria);
     font-weight: 400;
 }
 
-/* Main */
 main {
     display: flex;
+    align-items: center;
     justify-content: center;
     width: 100%;
-    height: 90vh;
-    padding: 5rem 2rem 9.375rem 2rem;
+    padding: 3.4375rem 9rem 9.375rem 9rem;
+    min-height: 90vh;
 }
 
-/* Container */
 .container {
     display: flex;
-    justify-content: space-between;
-    padding-left: 9.5625rem;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
 }
 
-/* Vídeo */
 .video-apresentacao {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 50%;
+    width: 100%;
+    justify-content: normal;
+    margin-right: 16%;
+    max-width: 800px;
+    flex: 1 1 500px;
 }
 
 .video-apresentacao .titulo {
     font-size: 2.8rem;
     color: var(--cor-titulo);
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     text-align: center;
 }
 
 .video-apresentacao .descricao {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: var(--cor-parafrafo);
-    margin-bottom: 1rem;
-    margin-top: 2%;
+    margin-bottom: 1.1rem;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .aula {
     width: 100%;
-    aspect-ratio: 17/10;
+    aspect-ratio: 16 / 9;
     border-radius: 1rem;
-    border: .1875rem solid var(--border-video);
+    border: 3px solid var(--border-video);
 }
 
-/* Botões */
 .botoes {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    align-items: center;
     gap: 1.5rem;
-    width: 30%;
-    margin-bottom: 5%;
-    margin-right: 4.5%;
+    width: 100%;
+    max-width: 320px;
+    flex: 1 1 300px;
 }
 
 .btn {
-    padding: .875rem 0;
-    width: 65%;
-    font-size: 1.4rem;
-    font-family: var(--fonte-primaria);
-    font-weight: 400;
-    border-radius: .625rem;
-    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0.875rem 0;
+    width: 100%;
+    max-width: 300px;
+    font-size: 1.4rem;
+    font-family: var(--fonte-primaria, sans-serif);
+    font-weight: 400;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.03);
 }
 
 .continuar {
     color: var(--setery-color);
     background-color: var(--cor-titulo);
     border: none;
+    text-transform: uppercase;
 }
 
 .ebook {
     color: var(--cor-titulo);
-    border: .1875rem solid var(--cor-titulo);
+    background-color: transparent;
+    border: 3px solid var(--cor-titulo);
 }
 
 .download {
-    margin-left: .75rem;
+    margin-left: 0.75rem;
 }
+
+@media (max-width: 768px) {
+    main {
+        padding: 2rem 1rem;
+    }
+    
+    .container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .video-apresentacao .titulo {
+        font-size: 2rem;
+    }
+    
+    .btn {
+        font-size: 1.1rem;
+    }
+}
+

@@ -25,7 +25,7 @@ main {
 .ficha-item h2 {
   font-weight: 700;
   color: var(--teciary-color);
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.4rem;
 }
 
 .ficha-item p {

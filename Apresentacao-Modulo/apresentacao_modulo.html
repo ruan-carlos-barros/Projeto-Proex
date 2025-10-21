@@ -15,9 +15,9 @@
     <img class="logo" src="/assets/ComunsReutilizaveis/uea_01.svg" alt="Logo UEA">
 
     <nav class="nav-links" aria-label="Menu principal">
-        <a href="/Apresentacao-Modulo/apresentacao_modulo.html">Início</a>
-        <a href="/Ficha-Tecnica/ficha_tecnica.html">Ficha Técnica</a>
-        <a href="/sobre/sobre.html">Sobre</a>
+        <a class="ini" href="/Apresentacao-Modulo/apresentacao_modulo.html">Início</a>
+        <a class="tec" href="/Ficha-Tecnica/ficha_tecnica.html">Ficha Técnica</a>
+        <a class="sob" href="/sobre/sobre.html">Sobre</a>
     </nav>
 
     <div class="user-menu">
@@ -33,28 +33,30 @@
   </header>
 
     <main>
-    <section class="container">
-        <div class="video-apresentacao" aria-label="Vídeo da apresentação do curso">
-            <h1 class="titulo">Teorias da Aprendizagem</h1>
-            <p class="descricao">ASSISTA O VÍDEO DA APRESENTAÇÃO DO CURSO</p>
-            <iframe class="aula" 
-                src="https://www.youtube.com/embed/"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-                loading="lazy">
-            </iframe>
-        </div>
+        <section class="container">
+            <div class="video-apresentacao" aria-labelledby="section-title">
+                <h1 id="section-title" class="titulo">Teorias da Aprendizagem</h1>
+                <p class="descricao">Assista o vídeo da apresentação do curso</p>
+        
+                <iframe 
+                    class="aula" 
+                    src="https://www.youtube.com/embed/" 
+                    title="Vídeo de apresentação do curso Teorias da Aprendizagem"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+            </div>
 
-        <div class="botoes">
-            <button type="button" class="btn continuar">INICIAR</button>
-            <button type="button" class="btn ebook">
-                E-book do Módulo
-                <img class="download" src="/assets/ModuloSvgGeral/ebook-baixar.svg" alt="Baixar E-book do Módulo">
-            </button>
-        </div>
-    </section>
-</main>
+            <div class="botoes">
+                <button type="button" class="btn continuar">Iniciar</button>
+                <button type="button" class="btn ebook">
+                    E-book do Módulo
+                    <img class="download" src="/assets/ModuloSvgGeral/ebook-baixar.svg" alt="Baixar E-book do Módulo">
+                </button>
+            </div>
+        </section>
+    </main>
 
 </body>
 

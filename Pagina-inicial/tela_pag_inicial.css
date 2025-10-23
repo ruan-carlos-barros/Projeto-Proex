@@ -1,5 +1,6 @@
 .main-principal {
-    padding: 45px 62px 165px 66px;
+    padding: 1.75rem 3.875rem 3.875rem 4.125rem;
+    font-family: var(--fonte-secundaria);
 }
 
 .div-principal {

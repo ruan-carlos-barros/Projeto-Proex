@@ -1,0 +1,175 @@
+.main-principal {
+    padding: 1.75rem 3.875rem 3.875rem 4.125rem;
+    font-family: var(--fonte-secundaria);
+    flex-wrap: wrap;
+}
+
+/* Main container for the panel */
+.div-1-painel {
+    display: flex;
+    flex-direction: row;
+    padding: 36px 0 36px 61px;
+    background-color: var(--setery-color);
+    box-shadow: 0rem 0rem 0.425rem var(--tertiary-color);
+    border-radius: 15px;
+    margin-bottom: 56px;
+}
+
+/* Container for the profile image */
+.img_perfil-1 {
+    margin-right: 59px;
+}
+
+/* Container for user information (name, email, buttons) */
+.informacoes_painel-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Style for the main title (user's name) */
+.titulo_painel {
+    color: var(--teciary-color);
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+/* Style for the paragraph (user's email) */
+.paragrafo_painel {
+    color: var(--tertiary-color);
+    font-weight: 400;
+    margin-bottom: 19px;
+}
+
+/* Shared font size for title and paragraph */
+.titulo_painel,
+.paragrafo_painel {
+    font-size: 22px;
+}
+
+/* Specific margin for the messages icon */
+.icone_mensagens {
+    margin: 0 19px;
+}
+
+/* Sets the cursor to a pointer for all icons */
+.icone_notificacoes,
+.icone_mensagens,
+.icone_vermais {
+    cursor: pointer;
+}
+
+/* Main container for the second panel */
+.div-2-painel {
+    display: flex;
+    flex-direction: column;
+    color: var(--teciary-color);
+    background-color: var(--setery-color);
+    box-shadow: 0rem 0rem 0.425rem var(--tertiary-color);
+    border-radius: 15px;
+    padding: 35px 59px 60px 58px;
+    background-image: url(); /* Note: No URL is specified here */
+}
+
+/* Title style for the "Resumo dos cursos" section */
+.titulo_painel_div2 {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+/* Creates a decorative line after the title */
+.titulo_painel_div2::after {
+    content: "";
+    flex: 1;
+    height: 3px;
+    background-color: var(--cor-titulo);
+    margin-left: 25px;
+}
+
+/* Container for the filter/sort icons */
+.funcoes {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+/* Margin for the A-Z sort icon */
+.ordenar_a-z {
+    margin: 16px 0;
+}
+
+/* Sets the cursor to a pointer for the icons */
+.todos,
+.ordenar_a-z,
+.caixa {
+    cursor: pointer;
+}
+
+/* Container for the offered courses section */
+.div_cursos_ofertados {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: -4%;
+}
+
+/* Container for the course image */
+.Texto_botoes_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0rem 0rem 0.325rem var(--tertiary-color);
+}
+
+/* Container for the course name and button */
+.Texto_botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0rem 0rem 0.325rem var(--tertiary-color);
+}
+
+/* Styling for the course image itself */
+.curso_ofertado {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Styling for the course name */
+.nome_curso {
+    display: flex;
+    padding: 0 14px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--cor-black);
+    margin-bottom: 28px;
+    padding-top: 6px;
+}
+
+/* Styling for the "Iniciar" button */
+.botao_curso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4.5px 110px;
+    background-color: var(--secondary-color);
+    color: var(--setery-color);
+    border: none;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}

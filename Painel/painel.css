@@ -14,8 +14,80 @@ main {
     margin-bottom: 56px;
 }
 
-.selecionar-1 {
-    margin-bottom: 207px;
+
+.div_cursos_ofertados {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: -4%;
+}
+
+.testeee {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Texto_botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0rem 0rem 0.325rem var(--tertiary-color);
+}
+
+.Texto_botoes_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0rem 0rem 0.325rem var(--tertiary-color);
+}
+
+
+.curso_ofertado {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+
+.nome_curso {
+    display: flex;
+    padding: 0 14px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--cor-black);
+    margin-bottom: 28px;
+    padding-top: 6px;
+}
+
+.botao_curso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4.5px 110px;
+    background-color: var(--secondary-color);
+    color: var(--setery-color);
+    border: none;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.div_cursos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .img_perfil-1 {
@@ -83,19 +155,15 @@ main {
 .titulo_painel_div2::after {
     content: "";
     flex: 1;
-    /* faz a linha ocupar o espaço restante */
     height: 3px;
-    /* espessura da linha */
     background-color: var(--cor-titulo);
-    /* cor da linha */
     margin-left: 25px;
-    /* espaço entre o texto e a linha */
 }
 
 .funcoes {
     display: flex;
     flex-direction: column;
-    align-items: start;   
+    align-items: start;
 }
 
 .filtrar {
@@ -104,4 +172,7 @@ main {
 
 .ordenar_a-z {
     margin: 16px 0;
+}
+.selecionar-1 {
+    margin-bottom: 180px;
 }

@@ -139,10 +139,10 @@ body {
 .Start {
     display: flex;
     height: 10vh;
-    background-image: url(/assets/ComunsReutilizaveis/Header_Fundo.svg);
+    background-image: url(/assets/ComunsReutilizaveis/uea_01.svg), url(/assets/ComunsReutilizaveis/Header_Fundo.svg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: 13% ,cover;
+    background-position: 3% 50%, center;
     font-family: var(--fonte-primaria);
     justify-content: space-between;
     top: 0;

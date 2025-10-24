@@ -1,56 +1,61 @@
 .main-principal {
-    padding: 2.7rem 5rem 4rem 5rem;
+    padding: 3rem 5%;
     font-family: var(--fonte-secundaria);
 }
 
 .div-principal {
     background-color: var(--setery-color);
-    box-shadow: 0rem 0rem 0.425rem var(--tertiary-color);
+    box-shadow: 0 0 0.425rem var(--tertiary-color);
     width: 100%;
     height: 40rem;
     border-radius: 15px;
     margin-bottom: 6.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-principal h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
 }
 
 .div-secundario {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    gap: 2.625rem;
     background-color: var(--setery-color);
-    box-shadow: 0rem 0rem 0.325rem var(--tertiary-color);
+    box-shadow: 0 0 0.325rem var(--tertiary-color);
     width: 100%;
     border-radius: 15px;
     margin-bottom: 3rem;
-    padding: 90px 45px 90px 45px;
-    font-family: var(--fonte-secundaria);
-    font-weight: 700;
+    padding: 5.625rem 2.8125rem;
 }
 
 .div-secundario.final {
-    margin-bottom: 128px;
+    margin-bottom: 8rem;
 }
 
 .bloco_img {
-    margin-right: 42px;
+    flex-shrink: 0;
     width: 28%;
-    height: 100%;
 }
 
 .img_pag {
     width: 100%;
-    height: 100%;
+    height: auto;
+    display: block;
 }
 
 .informacoes {
     display: flex;
     flex-direction: column;
-    width: 72%;
+    flex-grow: 1;
 }
 
 .titulo {
     font-size: 1.9rem;
-    margin-bottom: 2.9rem;
+    margin-bottom: 1.8rem;
     color: var(--teciary-color);
 }
 
@@ -58,23 +63,27 @@
     color: var(--cor-pg-inicial);
     font-size: 1.5rem;
     font-weight: 400;
-    margin-bottom: 2.8rem;
+    margin-bottom: 1.8rem;
     line-height: 2.3rem;
-    justify-content: justify;
+    text-align: justify;
 }
 
 .botao {
-    width: 42%;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    width: 45%;
+    padding: 1rem 0;
     color: var(--primary-color);
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+    font-weight: 700;
     background-color: var(--secondary-color);
     border: none;
     cursor: pointer;
     border-radius: 10px;
-    padding: 1rem 0;
+    transition: opacity 0.3s ease;
 }
 
 .botao:hover {
-    background-color: var(--secondary-color);
     opacity: 0.7;
 }

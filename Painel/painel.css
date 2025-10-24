@@ -1,45 +1,50 @@
 main {
-    padding: 2.5rem 5.4rem 3.875rem 5.4rem;
+    padding: 2.5rem 5%;
     font-family: var(--fonte-secundaria);
-    flex-wrap: wrap;
 }
 
 .div-1-painel {
     display: flex;
-    flex-direction: row;
-    padding: 2.7% 3.8125rem;
+    align-items: center;
+    gap: 3.7rem;
+    padding: 2.5rem 3.8rem;
     background-color: var(--setery-color);
-    box-shadow: 0rem 0rem 0.425rem var(--tertiary-color);
+    box-shadow: 0 0 0.425rem var(--tertiary-color);
     border-radius: 15px;
-    margin-bottom: 4%;
+    margin-bottom: 3rem;
 }
 
 .img_perfil-1 {
-    margin-right: 59px;
+    flex-shrink: 0;
     width: 11%;
+    min-width: 120px;
 }
 
 .img_perfil-1 img {
     width: 100%;
+    height: auto;
+    border-radius: 50%;
+    display: block;
 }
 
 .informacoes_painel-2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 89%;
+    flex-grow: 1;
 }
 
 .titulo_painel {
     color: var(--teciary-color);
     font-weight: 700;
-    margin-bottom: 14px;
+    margin-bottom: 0.875rem;
 }
 
 .paragrafo_painel {
     color: var(--tertiary-color);
     font-weight: 400;
-    margin-bottom: 19px;
+    margin-bottom: 1.2rem;
+    word-break: break-all;
 }
 
 .titulo_painel,
@@ -47,23 +52,23 @@ main {
     font-size: 1.7rem;
 }
 
-.icone_mensagens {
-    margin: 0 19px;
+.botoes_painel {
+    display: flex;
+    gap: 1.2rem;
+    width: 20%;
 }
 
 .div-2-painel {
-    display: flex;
-    flex-direction: column;
     color: var(--teciary-color);
     background-color: var(--setery-color);
-    box-shadow: 0rem 0rem 0.425rem var(--tertiary-color);
+    box-shadow: 0 0 0.425rem var(--tertiary-color);
     border-radius: 15px;
-    padding: 3.125rem 3.875rem 4.5rem 3.875rem;
-    margin-bottom: 1.6%;
+    padding: 3rem 3.8rem;
+    margin-bottom: 1rem;
 }
 
 .selecionar-1 {
-    margin-bottom: 180px;
+    margin-bottom: 5rem;
 }
 
 .titulo_painel_div2 {
@@ -78,107 +83,104 @@ main {
     flex: 1;
     height: 3.5px;
     background-color: var(--cor-titulo);
-    margin-left: 25px;
+    margin-left: 1.5rem;
 }
 
-.funcoes {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
-
-.filtrar {
-    margin-bottom: 1.2rem;
-}
-
-.ordenar_a-z {
-    margin: 16px 0;
-}
 
 .div_cursos {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 .andamento {
     width: 17%;
-    margin-bottom: 1.2rem;
 }
 
 .div_cursos_ofertados {
     display: flex;
     flex-direction: column;
-    margin-left: 7%;
-    margin-top: -6.6%;
+    border-radius: 5px;
+    box-shadow: 0 0 0.325rem var(--tertiary-color);
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+    margin-top: 2rem;
 }
 
 .Texto_botoes_img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    border-radius: 5px;
     width: 100%;
-    max-width: 300px;
-    box-shadow: 0rem 0rem 0.325rem var(--tertiary-color);
+    height: 150px;
+    overflow: hidden;
 }
 
 .curso_ofertado {
     width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 5px;
+    height: 100%;
     object-fit: cover;
 }
 
 .Texto_botoes {
+    padding: 1rem;
+    background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 300px;
-    box-shadow: 0rem 0rem 0.325rem var(--tertiary-color);
+    gap: 1rem;
 }
 
 .nome_curso {
-    display: flex;
-    padding: 0 14px;
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--cor-black);
-    margin-bottom: 28px;
-    padding-top: 6px;
+    text-align: center;
 }
 
 .botao_curso {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 4.5px 110px;
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
     background-color: var(--secondary-color);
     color: var(--setery-color);
     border: none;
     font-size: 1.2rem;
-    margin-bottom: 12px;
     border-radius: 3px;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
 }
 
-.icone_notificacoes,
-.icone_mensagens,
-.icone_vermais,
-.filtrar,
-.ordenar,
-.todos,
-.ordenar_a-z,
-.caixa {
+.botao_curso:hover {
+    opacity: 0.8;
+}
+
+.botoes_painel button,
+.funcoes button {
+    background: none;
+    border: none;
     cursor: pointer;
-    width: 3.8%;
 }
 
-.todos {
-    width: 8%;
+.botoes_painel img {
+    width: 100%;
+    transition: transform 0.2s ease;
+}
+
+.botoes_painel button:hover img,
+.funcoes button:hover img {
+    transform: scale(1.1);
+}
+
+.funcoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.8rem;
+}
+
+.funcoes img {
+    width: 100%;
+    transition: transform 0.2s ease;
 }

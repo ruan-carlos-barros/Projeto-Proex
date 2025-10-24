@@ -166,6 +166,32 @@ body {
     font-size: 1.8rem;
 }
 
+/* 2. Tablets (a partir de 601px) */
+@media screen and (min-width: 601px) {
+  
+}
+
+/* 3. Mini Laptops (a partir de 769px) */
+@media screen and (min-width: 769px) {
+
+}
+
+/* 4. Laptops e Desktop (a partir de 1200px) */
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .inicio,
+    .ficha,
+    .sobre {
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+.header_div_start {
+    padding: 0% 30%;
+}
+}
+
 /* Footer normal || Para paginas que contém informacoes || Exemplo -- Ficha Tecnica e sobre.  */
 
 .footer {

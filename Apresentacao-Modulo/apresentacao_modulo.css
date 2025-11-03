@@ -14,7 +14,7 @@ main {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 3.4375rem 9rem 9.375rem 9rem;
+    padding: 3.4375rem 5rem 9.375rem 5rem;
     min-height: 90vh;
 }
 
@@ -64,7 +64,7 @@ main {
     align-items: center;
     gap: 1.5rem;
     width: 100%;
-    max-width: 320px;
+    max-width: 420px;
     flex: 1 1 300px;
 }
 
@@ -73,8 +73,8 @@ main {
     align-items: center;
     justify-content: center;
     padding: 0.875rem 0;
-    width: 100%;
-    max-width: 300px;
+    width: 80%;
+    max-width: 400px;
     font-size: 1.4rem;
     font-family: var(--fonte-primaria, sans-serif);
     font-weight: 400;
@@ -91,6 +91,7 @@ main {
     color: var(--setery-color);
     background-color: var(--cor-titulo);
     border: none;
+    margin-bottom: 0.7rem;
     text-transform: uppercase;
 }
 
@@ -102,24 +103,5 @@ main {
 
 .download {
     margin-left: 0.75rem;
-}
-
-@media (max-width: 768px) {
-    main {
-        padding: 2rem 1rem;
-    }
-    
-    .container {
-        flex-direction: column;
-        gap: 3rem;
-    }
-    
-    .video-apresentacao .titulo {
-        font-size: 2rem;
-    }
-    
-    .btn {
-        font-size: 1.1rem;
-    }
 }
 

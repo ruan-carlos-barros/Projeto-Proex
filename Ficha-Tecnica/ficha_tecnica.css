@@ -1,5 +1,5 @@
 main {
-  padding: 3.7rem 6.25rem 4.75rem 6.25rem;
+  padding: 3.7rem 7.2rem 4.75rem 7.2rem;
   font-family: var(--fonte-secundaria);
   color: var(--tertiary-color);
   flex-wrap: wrap;
@@ -14,18 +14,17 @@ main {
 
 .ficha-item {
   border-top: 2px solid var(--linha-color);
-  padding-top: 3.8rem;
-  padding-bottom: 3.8rem;
+  padding: 3.9rem 0;
 }
 
-.teste {
+.none {
     border-top: 2px solid var(--teciary-color);
 }
 
 .ficha-item h2 {
   font-weight: 700;
   color: var(--teciary-color);
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.5rem;
 }
 
 .ficha-item p {
@@ -58,15 +57,18 @@ main {
 .ficha-item address {
   margin-top: 1.2rem;
   font-style: normal;
-}
-
-.licenca {
-  margin-top: 1.2rem;
   font-weight: 400;
+  font-family: (--fonte-primaria); 
+  color: var(--cor-parafrafo);
 }
 
-h2 .local {
-    font-weight: 400;
+.Licenca {
+  padding-bottom: 0.7%;
+}
+
+.imgg {
+  margin-top: 1.5rem;
+  font-weight: 400;
 }
 
 .ficha-item h2,
@@ -79,5 +81,5 @@ h2 .local {
 }
 
 .ficha-item img {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }

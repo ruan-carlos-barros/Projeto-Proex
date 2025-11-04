@@ -1,0 +1,72 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 46px 185px 54px 185px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    color: var(--teciary-color);
+}
+
+.h1_saiba_mais {
+    font-size: 1.8rem;
+}
+
+.div_saiba_mais_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_saiba_mais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 71px 19px 71px;
+    margin-top: 46px;
+    background-color: var(--setery-color);
+    border: 3px solid var(--border-saiba-mais);
+    border-radius: 15px;
+    width: 100%;
+}
+
+.h2_saiba_mais {
+    color: var(--secondary-color);
+    margin: 0 0 6px 0;
+}
+
+.icone {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.icone_h1 {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.p_saiba_mais {
+    margin-bottom: 16px;
+    color: var(--teciary-color);
+}
+
+.a_saiba_mais {
+    color: var(--primary-color);
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    padding: 6px 25px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.h2_saiba_mais,
+.p_saiba_mais {
+    font-size: 21px;
+}

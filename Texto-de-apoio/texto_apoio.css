@@ -1,0 +1,13 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 38px;
+    border-bottom: 1px solid var(--linha-color);
+}
+
+.img-slide {
+    width: 70%;
+    padding-bottom: 38px;
+}

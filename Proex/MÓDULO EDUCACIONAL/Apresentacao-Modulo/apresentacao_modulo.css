@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 90vh;
+    padding: 3.4375rem 5rem 9.375rem 5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.video-apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    width: 100%;
+    max-width: 800px;
+    margin-right: 16%;
+    flex: 1 1 500px;
+}
+
+.video-apresentacao .titulo {
+    margin-bottom: 4rem;
+    font-size: 2.8rem;
+    text-align: center;
+    color: var(--cor-titulo);
+}
+
+.video-apresentacao .descricao {
+    margin-bottom: 1.1rem;
+    font-size: 1.15rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--cor-parafrafo);
+}
+
+.aula {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 3px solid var(--border-video);
+    border-radius: 1rem;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 420px;
+    flex: 1 1 300px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 400px;
+    padding: 0.875rem 0;
+    font-size: 1.4rem;
+    font-family: var(--fonte-primaria, sans-serif);
+    font-weight: 400;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+}
+
+.continuar {
+    margin-bottom: 0.7rem;
+    border: none;
+    text-transform: uppercase;
+    color: var(--setery-color);
+    background-color: var(--cor-titulo);
+}
+
+.ebook {
+    border: 3px solid var(--cor-titulo);
+    color: var(--cor-titulo);
+    background-color: transparent;
+}
+
+.download {
+    margin-left: 0.75rem;
+}
+

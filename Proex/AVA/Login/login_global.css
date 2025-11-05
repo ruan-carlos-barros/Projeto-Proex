@@ -1,0 +1,156 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.login-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+
+    max-height: 90vh;
+    
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-primaria);
+}
+
+/* Login Box */
+.Login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 3%;
+    margin-bottom: 4%;
+    padding: 0 3rem 1% 3rem;
+
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 0.325rem black;
+}
+
+.logo_login {
+    width: 25%;
+    margin: 3rem 0;
+}
+
+/* Campos de input */
+.identificacao {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: .8125rem 13rem .8125rem 4rem;
+
+    border: .1rem solid var(--secondary-color);
+    border-radius: 0.7rem;
+
+    font-size: 1.5rem;
+    color: var(--teciary-color);
+
+    background-position: 4%;
+    background-size: 2rem;
+    background-repeat: no-repeat;
+    background-image: url(/assets/LoginSvgGeral/Reutilizaveis/usuario.svg);
+}
+
+.senha-container {
+    position: relative;
+    width: 100%;
+}
+
+.senha {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: .8125rem 1.5625rem .8125rem 4.0625rem;
+
+    border: .1rem solid var(--secondary-color);
+    border-radius: 0.7rem;
+
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+
+    background-position: 5% center;
+    background-size: 1.2rem;
+    background-repeat: no-repeat;
+    background-image: url(/assets/LoginSvgGeral/Reutilizaveis/senha.svg);
+}
+
+.toggle-senha {
+    position: absolute;
+    top: 35%;
+    right: .625rem;
+    transform: translateY(-50%);
+    width: 2.1875rem;
+    height: 2.1875rem;
+    cursor: pointer;
+}
+
+/* Botão principal */
+.botao {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: .9375rem 14rem;
+
+    border: none;
+    border-radius: 0.7rem;
+
+    font-size: 1.5rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    color: var(--primary-color);
+
+    background-color: var(--secondary-color);
+    background-position: 36%;
+    background-size: 1.8rem;
+    background-repeat: no-repeat;
+    background-image: url(/assets/LoginSvgGeral/Reutilizaveis/unlock.svg);
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+/* Links e textos adicionais */
+.esqueci {
+    margin-bottom: 2.5rem;
+
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.linha {
+    width: 100%;
+    height: 0.05rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--cor-parafrafo);
+}
+
+.Autenticar {
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--teciary-color);
+}
+
+/* Botão Google */
+.google {
+    width: 100%;
+    margin-bottom: 5rem;
+    padding: 1.2rem 0;
+
+    border: none;
+    border-radius: 0.7rem;
+
+    font-size: 1.3rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    color: var(--quaternary-color);
+
+    background-color: var(--primary-color);
+    background-position: 3%;
+    background-size: 2rem;
+    background-repeat: no-repeat;
+    background-image: url(/assets/LoginSvgGeral/Reutilizaveis/google.svg);
+    cursor: pointer;
+    box-shadow: 0rem 0rem 0.325rem var(--quaternary-color);
+}
+

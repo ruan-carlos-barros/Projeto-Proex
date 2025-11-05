@@ -1,0 +1,51 @@
+main {
+    display: flex;
+    flex-direction: column;
+
+    padding: 46px 214px 38px 214px;
+
+    font-family: var(--fonte-secundaria);
+}
+
+.h2_texto {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--teciary-color);
+}
+
+.divisao_geral {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_livros {
+    display: flex;
+    flex-direction: column;
+}
+
+.div_4 {
+    margin-right: 77px;
+}
+
+.conteudos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-top: 30px;
+    padding: 16px 33px 16px 16px;
+
+    border-radius: 8px;
+    box-shadow: 0 0 0.325rem var(--tertiary-color);
+}
+
+.conteudos_livro {
+    margin-left: 14px;
+
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--cor-conteudo-referencias);
+}
+

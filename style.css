@@ -26,6 +26,7 @@
     --cor-pg-inicial: #8C8C8C;
     --cor-black: #000000;
     --border-saiba-mais: #39A935;
+    --cor-conteudo-referencias: #696969;
 
     --fonte-primaria: 'Arial Rounded MT', Arial, sans-serif;
     --fonte-secundaria: arial, sans-serif;
@@ -39,39 +40,59 @@
 }
 
 body {
-    background-color: var(--primary-color);
     height: 100%;
+    background-color: var(--primary-color);
 }
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mobile-first media queries scaffolding */
+@media (min-width: 480px) {}
+@media (min-width: 768px) {}
+@media (min-width: 1024px) {}
+@media (min-width: 1280px) {}
 
 /* Header Basic - Contém só o background-image || Exemplo de Tela -- Login -- | */
 
 .basic {
     display: flex;
+
     height: 10vh;
-    background-image: url(/assets/ComunsReutilizaveis/Header_Fundo.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/assets/ComunsReutilizaveis/Header_Fundo.svg);
 }
 
 /* Header Intermediate -  Para as páginas que contém o conteudo "inicio", "Ficha Tecnica" e "Sobre" || Exemplo de Tela -- Ficha Tecnica -- */
 
 .header-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  gap: 0;
   flex-wrap: wrap;
+
+  position: sticky;
+  top: 0;
+  z-index: auto;
   width: 100%;
   height: 10vh;
   padding: 0.25rem 3.5rem;
+  box-sizing: border-box;
+
   font-family: var(--fonte-primaria);
   font-weight: 400;
-  background-image: url(/assets/ComunsReutilizaveis/Header_Fundo.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
+
   background-position: center;
-  position: sticky;
-  top: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/assets/ComunsReutilizaveis/Header_Fundo.svg);
 }
 
 .logo {
@@ -87,15 +108,24 @@ body {
 }
 
 .nav-links a {
-  color: var(--primary-color);
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 1.5rem;
-  opacity: 0.6; 
-  transition: opacity 0.2s ease-in-out;
-  border-bottom: 3px solid transparent;
+  display: inline;
+
+  margin: 0;
   padding-top: 8px;
   padding-bottom: 8px;
+
+  border: none;
+  border-bottom: 3px solid transparent;
+
+  font-size: 1.5rem;
+  text-align: left;
+  text-decoration: none;
+  color: var(--primary-color);
+
+  background: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0.6; 
 }
 
 /* isso serve para destacar a pagina atual */
@@ -113,9 +143,11 @@ body {
 
 .user-menu img {
   width: 115%;
-  cursor: pointer;
+
   border: none;
+
   background: none;
+  cursor: pointer;
 }
 
 .img-perfil,
@@ -128,16 +160,19 @@ body {
 
 .hard {
     display: flex;
+    justify-content: space-between;
+
     width: 100%;
     height: 10vh;
     padding: .25rem 3.565rem .25rem 2.5rem;
-    justify-content: space-between;
+
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    background-image: url(/assets/ComunsReutilizaveis/Header_Fundo.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/assets/ComunsReutilizaveis/Header_Fundo.svg);
 }
 
 .img-perfil-hard {
@@ -156,87 +191,73 @@ body {
 
 .Start {
     display: flex;
-    height: 10vh;
-    background-image: url(/assets/ComunsReutilizaveis/uea_01.svg), url(/assets/ComunsReutilizaveis/Header_Fundo.svg);
-    background-repeat: no-repeat;
-    background-size: 13% ,cover;
-    background-position: 3% 50%, center;
-    font-family: var(--fonte-primaria);
     justify-content: space-between;
-    top: 0;
+
     position: sticky;
+    top: 0;
+
+    height: 10vh;
+
+    font-family: var(--fonte-primaria);
+
+    background-position: 3% 50%, center;
+    background-size: 13% ,cover;
+    background-repeat: no-repeat;
+    background-image: url(/assets/ComunsReutilizaveis/uea_01.svg), url(/assets/ComunsReutilizaveis/Header_Fundo.svg);
 }
 
 .header_div_start {
     display: flex;
-    width: 100%;
-    padding: 0% 32%;
     justify-content: space-evenly;
     align-items: center;
+
+    width: 100%;
+    padding: 0% 32%;
 }
 
 .inicio,
 .ficha,
 .sobre {
-    color: var(--primary-color);
-    text-decoration: none;
-    cursor: pointer;
     font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--primary-color);
+    cursor: pointer;
 }
 
 /* header text - Recursos Complementares */
 .text {
     display: flex;
-    height: 10vh;
-    background-image: url(/assets/ComunsReutilizaveis/Header_Fundo.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     align-items: center;
     justify-content: center;
+
+    height: 10vh;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/assets/ComunsReutilizaveis/Header_Fundo.svg);
 }
 
 .h1_apoio {
   font-family: var(--fonte-primaria);
-  color: var(--primary-color);
   font-size: 24px;
-}
-
-
-/* 2. Tablets (a partir de 601px) */
-@media screen and (min-width: 601px) {
-  
-}
-
-/* 3. Mini Laptops (a partir de 769px) */
-@media screen and (min-width: 769px) {
-
-}
-
-/* 4. Laptops e Desktop (a partir de 1200px) */
-@media screen and (min-width: 1200px) and (max-width: 1400px) {
-    .inicio,
-    .ficha,
-    .sobre {
-    color: var(--primary-color);
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 1.6rem;
-}
-
-.header_div_start {
-    padding: 0% 30%;
-}
+  color: var(--primary-color);
 }
 
 /* Footer normal || Para paginas que contém informacoes || Exemplo -- Ficha Tecnica e sobre.  */
 
 .footer {
-  background-color: var(--footer-bg-color);
-  color: var(--tertiary-color);
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
   padding: 3rem 3rem 4rem 3rem; 
+
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+
   font-family: var(--fonte-secundaria);
+  color: var(--tertiary-color);
+
+  background: none;
+  background-color: var(--footer-bg-color);
 }
 
 .footer-container {
@@ -251,11 +272,11 @@ body {
 }
 
 .footer-section h5 {
-  font-weight: 700;
-  font-size: 1.2rem;
   margin-bottom: 0.5rem;
-  color: var(--teciary-color);
+
   font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--teciary-color);
 }
 
 .footer-section p {
@@ -265,8 +286,8 @@ body {
 
 .footer-section hr {
   width: 100%;
-  border: 1px solid var(--linha2-color);
   margin-bottom: 0.5rem;
+  border: 1px solid var(--linha2-color);
 }
 
 .footer-section p,
@@ -308,17 +329,20 @@ address {
 /* Footer Diferente || Para paginas que outras informacoes || Exemplo -- Pagina inicial e painel  */
 
 .footer-pag-inicial {
-    font-family: var(--fonte-secundaria);
     display: flex;
     flex-direction: column;
+
     width: 100%;
+
+    font-family: var(--fonte-secundaria);
 }
 
 .footer-pag-inicial-div {
     display: flex;
-    background-color: var(--secondary-color);
     align-items: center;
     justify-content: center;
+
+    background-color: var(--secondary-color);
 }
 
 .img-pag-inicial {
@@ -326,14 +350,14 @@ address {
 }
 
 .footer-pag-final-div {
-    color: var(--teciary-color);
     padding: 5.125rem 0 4.3125rem 6.75rem;
+    color: var(--teciary-color);
 }
 
 .espacado {
-    font-weight: 400;
-    font-size: 18px;
     margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .teste {

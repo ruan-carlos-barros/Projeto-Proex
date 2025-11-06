@@ -111,13 +111,14 @@ video {
   display: inline;
 
   margin: 0;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 0.5rem 0;
 
   border: none;
   border-bottom: 3px solid transparent;
 
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: 400;
+  font-family: var(--fonte-primaria);
   text-align: left;
   text-decoration: none;
   color: var(--primary-color);
@@ -138,11 +139,12 @@ video {
   display: flex;
   align-items: center;
   gap: 3.5rem;
-  padding-right: 2%;
+  padding-right: 1%;
 }
 
 .user-menu img {
-  width: 115%;
+  width: 100%;
+  height: 100%;
 
   border: none;
 
@@ -240,7 +242,7 @@ video {
 
 .h1_apoio {
   font-family: var(--fonte-primaria);
-  font-size: 24px;
+  font-size: 1.5rem;
   color: var(--primary-color);
 }
 
@@ -355,11 +357,125 @@ address {
 }
 
 .espacado {
-    margin-bottom: 25px;
-    font-size: 18px;
+    margin-bottom: 1.5625rem;
+    font-size: 1.125rem;
     font-weight: 400;
 }
 
 .teste {
     margin: 0;  
+}
+
+/* Menu lateral acionado por .img-menu */
+.menu-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(0.125rem);
+  z-index: 999;
+}
+
+.menu-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(22rem, 90vw);
+  height: 100vh;
+  padding: 1.25rem;
+  box-shadow: -0.25rem 0 1rem rgba(0,0,0,0.15);
+  transform: translateX(100%);
+  transition: transform 0.25s ease-in-out;
+  z-index: 1000;
+
+  background: var(--setery-color);
+  color: var(--teciary-color);
+  font-family: var(--fonte-secundaria);
+}
+
+.menu-panel.open {
+  transform: translateX(0);
+}
+
+.menu-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.menu-title {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  color: var(--teciary-color);
+}
+
+.menu-progress {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.menu-progress-label,
+.menu-progress-text {
+  font-size: 0.875rem;
+  color: var(--tertiary-color);
+}
+
+.menu-progress-bar {
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 9999rem;
+  background: #e6f3ed;
+  overflow: hidden;
+}
+
+.menu-progress-fill {
+  height: 100%;
+  background: var(--secondary-color);
+}
+
+.menu-topicos {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.menu-item {
+  text-align: left;
+  padding: 0.75rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid #e3e3e3;
+  background: #fff;
+  color: var(--teciary-color);
+  cursor: pointer;
+}
+
+.menu-item.concluido {
+  background: #e6f3ed;
+  border-color: #cde7dc;
+}
+
+.menu-links-title {
+  font-size: 0.875rem;
+  color: var(--tertiary-color);
+  margin-bottom: 0.5rem;
+}
+
+.menu-link {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: var(--teciary-color);
+  border: 0.0625rem solid #e3e3e3;
+  background: #fff;
+}
+
+.menu-link + .menu-link {
+  margin-top: 0.5rem;
 }

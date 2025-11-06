@@ -21,14 +21,13 @@
     </nav>
 
     <div class="user-menu">
-        <button type="button" class="img-perfil" aria-label="Acessar perfil do usuário">
+      <button type="button" class="img-perfil" aria-label="Acessar perfil do usuário">
         <img src="/assets/ComunsReutilizaveis/Login.svg" alt="">
-    </button>
+      </button>
 
-    <button type="button" class="img-menu" aria-label="Abrir menu de navegação">
-      <img src="/assets/ComunsReutilizaveis/menu.svg" alt="">
-    </button>
-
+      <button type="button" class="img-menu" aria-label="Abrir menu de navegação">
+        <img src="/assets/ComunsReutilizaveis/menu.svg" alt="">
+      </button>
     </div>
   </header>
 
@@ -120,12 +119,68 @@
     </section>
 
     <section class="ficha-item">
-      <h2 class="Licenca">Licença:</h2>
+      <h2>Licença:</h2>
       <dt>Este módulo está licenciado sobre:</dt>
       <p class="imgg">Creative Commons 4.0</p>
-      <img src="/assets/FichaSvgGeral/Cc-by-nc-sa_icon.svg.svg" alt="Licença Creative Commons">
+      <img class="img_licenca" src="/assets/FichaSvgGeral/Cc-by-nc-sa_icon.svg.svg" alt="Licença Creative Commons">
     </section>
   </main>
+
+  <!-- Menu lateral acionado pelo botão .img-menu -->
+  <div class="menu-backdrop" hidden></div>
+  <aside class="menu-panel" aria-hidden="true" aria-label="Menu do módulo">
+    <button type="button" class="menu-close" aria-label="Fechar menu">×</button>
+    <h2 class="menu-title">Teorias da Aprendizagem</h2>
+    <div class="menu-progress">
+      <span class="menu-progress-label">Progresso</span>
+      <div class="menu-progress-bar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25" role="progressbar">
+        <div class="menu-progress-fill" style="width:25%"></div>
+      </div>
+      <span class="menu-progress-text">1 / 4 Tópicos Concluídos</span>
+    </div>
+    <nav class="menu-topicos" aria-label="Tópicos do módulo">
+      <button type="button" class="menu-item concluido">1. Behaviorismo</button>
+      <button type="button" class="menu-item">2. Construtivismo</button>
+      <button type="button" class="menu-item">3. Socioconstrutivismo</button>
+      <button type="button" class="menu-item">4. Construcionismo</button>
+    </nav>
+    <div class="menu-links">
+      <h3 class="menu-links-title">Links Úteis</h3>
+      <a class="menu-link" href="/Proex/MÓDULO EDUCACIONAL/Ficha-tecnica/ficha_tecnica.html">Ficha Técnica</a>
+      <a class="menu-link" href="/sobre/sobre.html">Sobre</a>
+      <a class="menu-link" href="#">Suporte</a>
+    </div>
+  </aside>
+
+  <script>
+    (function() {
+      const openBtn = document.querySelector('.img-menu');
+      const panel = document.querySelector('.menu-panel');
+      const backdrop = document.querySelector('.menu-backdrop');
+      const closeBtn = document.querySelector('.menu-close');
+
+      function openMenu() {
+        panel?.setAttribute('aria-hidden', 'false');
+        panel?.classList.add('open');
+        backdrop?.removeAttribute('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeMenu() {
+        panel?.setAttribute('aria-hidden', 'true');
+        panel?.classList.remove('open');
+        backdrop?.setAttribute('hidden', '');
+        document.body.style.overflow = '';
+      }
+
+      openBtn?.addEventListener('click', openMenu);
+      closeBtn?.addEventListener('click', closeMenu);
+      backdrop?.addEventListener('click', closeMenu);
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeMenu();
+      });
+    })();
+  </script>
 
   <footer class="footer">
   <div class="footer-container">

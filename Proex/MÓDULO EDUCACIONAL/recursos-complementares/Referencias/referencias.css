@@ -2,13 +2,15 @@ main {
     display: flex;
     flex-direction: column;
 
-    padding: 46px 214px 38px 214px;
+    padding: 2.875rem 13.375rem 2.375rem 13.375rem;
 
     font-family: var(--fonte-secundaria);
 }
 
 .h2_texto {
-    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2.1rem;
     font-weight: 400;
     color: var(--teciary-color);
 }
@@ -16,8 +18,7 @@ main {
 .divisao_geral {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    justify-content: center
 }
 
 .div_livros {
@@ -26,26 +27,30 @@ main {
 }
 
 .div_4 {
-    margin-right: 77px;
+    margin-right: 4.8125rem;
 }
 
 .conteudos {
     display: flex;
     flex-direction: row;
-    align-items: center;
 
-    margin-top: 30px;
-    padding: 16px 33px 16px 16px;
+    margin-top: 2.5rem;
+    padding: 1rem 3.75rem 0.9375rem 0.9375rem;
 
     border-radius: 8px;
     box-shadow: 0 0 0.325rem var(--tertiary-color);
 }
 
 .conteudos_livro {
-    margin-left: 14px;
+    display: flex;
+    align-items: center;
+    margin-left: 0.875rem;
 
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 400;
     color: var(--cor-conteudo-referencias);
 }
 
+.livros_img {
+    width: 25%;
+}

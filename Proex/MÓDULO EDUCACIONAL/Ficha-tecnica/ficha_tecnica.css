@@ -13,7 +13,7 @@ main {
 }
 
 .ficha-item {
-  padding: 3.9rem 0;
+  padding: 3.8rem 0;
   border-top: 2px solid var(--linha-color);
 }
 
@@ -32,7 +32,7 @@ main {
 }
 
 .ficha-item dt {
-  margin-top: 3rem;
+  margin-top: 4.1rem;
   font-weight: 400;
   color: var(--teciary-color); 
 }
@@ -62,13 +62,13 @@ main {
   color: var(--cor-parafrafo);
 }
 
-.Licenca {
-  padding-bottom: 0.7%;
-}
-
 .imgg {
   margin-top: 1.5rem;
   font-weight: 400;
+}
+
+.img_licenca {
+  width: 11%;
 }
 
 .ficha-item h2,

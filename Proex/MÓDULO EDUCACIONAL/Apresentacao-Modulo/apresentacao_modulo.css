@@ -15,7 +15,7 @@ main {
     justify-content: center;
     width: 100%;
     min-height: 90vh;
-    padding: 3.4375rem 5rem 9.375rem 5rem;
+    padding: 3rem 5rem 9.375rem 5rem;
 }
 
 .container {
@@ -37,14 +37,15 @@ main {
 
 .video-apresentacao .titulo {
     margin-bottom: 4rem;
-    font-size: 2.8rem;
+    font-size: 3rem;
     text-align: center;
     color: var(--cor-titulo);
 }
 
 .video-apresentacao .descricao {
     margin-bottom: 1.1rem;
-    font-size: 1.15rem;
+    margin-top: 1rem;
+    font-size: 1.3rem;
     text-align: center;
     text-transform: uppercase;
     color: var(--cor-parafrafo);
@@ -104,4 +105,3 @@ main {
 .download {
     margin-left: 0.75rem;
 }
-

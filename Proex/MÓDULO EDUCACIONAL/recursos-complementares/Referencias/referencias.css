@@ -2,7 +2,7 @@ main {
     display: flex;
     flex-direction: column;
 
-    padding: 2.875rem 13.375rem 2.375rem 13.375rem;
+    padding: 2.88rem 13.38rem 2.38rem 13.38rem;
 
     font-family: var(--fonte-secundaria);
 }
@@ -27,7 +27,7 @@ main {
 }
 
 .div_4 {
-    margin-right: 4.8125rem;
+    margin-right: 4.81rem;
 }
 
 .conteudos {
@@ -35,7 +35,7 @@ main {
     flex-direction: row;
 
     margin-top: 2.5rem;
-    padding: 1rem 3.75rem 0.9375rem 0.9375rem;
+    padding: 1rem 3.75rem 0.94rem 0.94rem;
 
     border-radius: 8px;
     box-shadow: 0 0 0.325rem var(--tertiary-color);
@@ -44,7 +44,7 @@ main {
 .conteudos_livro {
     display: flex;
     align-items: center;
-    margin-left: 0.875rem;
+    margin-left: 0.88rem;
 
     font-size: 1.3rem;
     font-weight: 400;

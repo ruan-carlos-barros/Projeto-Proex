@@ -166,7 +166,7 @@ video {
 
     width: 100%;
     height: 10vh;
-    padding: .25rem 3.565rem .25rem 2.5rem;
+    padding: 0.25rem 3.57rem 0.25rem 2.5rem;
 
     font-family: var(--fonte-primaria);
     font-weight: 400;
@@ -352,13 +352,13 @@ address {
 }
 
 .footer-pag-final-div {
-    padding: 5.125rem 0 4.3125rem 6.75rem;
+    padding: 5.13rem 0 4.31rem 6.75rem;
     color: var(--teciary-color);
 }
 
 .espacado {
-    margin-bottom: 1.5625rem;
-    font-size: 1.125rem;
+    margin-bottom: 1.56rem;
+    font-size: 1.13rem;
     font-weight: 400;
 }
 
@@ -371,7 +371,7 @@ address {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(0.125rem);
+  backdrop-filter: blur(0.13rem);
   z-index: 999;
 }
 
@@ -421,7 +421,7 @@ address {
 
 .menu-progress-label,
 .menu-progress-text {
-  font-size: 0.875rem;
+  font-size: 0.88rem;
   color: var(--tertiary-color);
 }
 
@@ -448,7 +448,7 @@ address {
   text-align: left;
   padding: 0.75rem 0.75rem;
   border-radius: 0.5rem;
-  border: 0.0625rem solid #e3e3e3;
+  border: 0.06rem solid #e3e3e3;
   background: #fff;
   color: var(--teciary-color);
   cursor: pointer;
@@ -460,7 +460,7 @@ address {
 }
 
 .menu-links-title {
-  font-size: 0.875rem;
+  font-size: 0.88rem;
   color: var(--tertiary-color);
   margin-bottom: 0.5rem;
 }
@@ -472,7 +472,7 @@ address {
   border-radius: 0.5rem;
   text-decoration: none;
   color: var(--teciary-color);
-  border: 0.0625rem solid #e3e3e3;
+  border: 0.06rem solid #e3e3e3;
   background: #fff;
 }
 

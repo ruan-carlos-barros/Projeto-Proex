@@ -23,13 +23,13 @@
 .div-secundario {
     display: flex;
     align-items: center;
-    gap: 2.625rem;
+    gap: 2.63rem;
     background-color: var(--setery-color);
     box-shadow: 0 0 0.325rem var(--tertiary-color);
     width: 100%;
     border-radius: 15px;
     margin-bottom: 3rem;
-    padding: 5.625rem 2.8125rem;
+    padding: 5.63rem 2.81rem;
 }
 
 .div-secundario.final {

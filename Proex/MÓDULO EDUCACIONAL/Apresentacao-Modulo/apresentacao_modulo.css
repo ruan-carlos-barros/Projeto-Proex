@@ -15,7 +15,7 @@ main {
     justify-content: center;
     width: 100%;
     min-height: 90vh;
-    padding: 3rem 5rem 9.375rem 5rem;
+    padding: 3rem 5rem 9.38rem 5rem;
 }
 
 .container {
@@ -30,9 +30,9 @@ main {
     flex-direction: column;
     justify-content: normal;
     width: 100%;
-    max-width: 800px;
+    max-width: 50rem;
     margin-right: 16%;
-    flex: 1 1 500px;
+    flex: 1 1 31.25rem;
 }
 
 .video-apresentacao .titulo {
@@ -65,8 +65,8 @@ main {
     align-items: center;
     gap: 1.5rem;
     width: 100%;
-    max-width: 420px;
-    flex: 1 1 300px;
+    max-width: 26.25rem;
+    flex: 1 1 18.75rem;
 }
 
 .btn {
@@ -74,12 +74,12 @@ main {
     align-items: center;
     justify-content: center;
     width: 80%;
-    max-width: 400px;
-    padding: 0.875rem 0;
+    max-width: 25rem;
+    padding: 0.88rem 0;
     font-size: 1.4rem;
     font-family: var(--fonte-primaria, sans-serif);
     font-weight: 400;
-    border-radius: 0.625rem;
+    border-radius: 0.63rem;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, transform 0.2s;
 }

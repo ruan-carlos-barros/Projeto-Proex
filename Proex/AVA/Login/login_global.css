@@ -38,7 +38,7 @@ html, body {
 .identificacao {
     width: 100%;
     margin-bottom: 1.5rem;
-    padding: .8125rem 13rem .8125rem 4rem;
+    padding: 0.81rem 13rem 0.81rem 4rem;
 
     border: .1rem solid var(--secondary-color);
     border-radius: 0.7rem;
@@ -60,7 +60,7 @@ html, body {
 .senha {
     width: 100%;
     margin-bottom: 1.5rem;
-    padding: .8125rem 1.5625rem .8125rem 4.0625rem;
+    padding: 0.81rem 1.56rem 0.81rem 4.06rem;
 
     border: .1rem solid var(--secondary-color);
     border-radius: 0.7rem;
@@ -77,10 +77,10 @@ html, body {
 .toggle-senha {
     position: absolute;
     top: 35%;
-    right: .625rem;
+    right: 0.63rem;
     transform: translateY(-50%);
-    width: 2.1875rem;
-    height: 2.1875rem;
+    width: 2.19rem;
+    height: 2.19rem;
     cursor: pointer;
 }
 
@@ -88,7 +88,7 @@ html, body {
 .botao {
     width: 100%;
     margin-bottom: 1.5rem;
-    padding: .9375rem 14rem;
+    padding: 0.94rem 14rem;
 
     border: none;
     border-radius: 0.7rem;

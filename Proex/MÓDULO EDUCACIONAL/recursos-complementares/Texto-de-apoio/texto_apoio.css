@@ -4,13 +4,13 @@ main {
     align-items: center;
     justify-content: center;
 
-    padding-top: 38px;
+    padding-top: 2.38rem;
 
     border-bottom: 1px solid var(--linha-color);
 }
 
 .img-slide {
     width: 70%;
-    padding-bottom: 38px;
+    padding-bottom: 2.38rem;
 }
 

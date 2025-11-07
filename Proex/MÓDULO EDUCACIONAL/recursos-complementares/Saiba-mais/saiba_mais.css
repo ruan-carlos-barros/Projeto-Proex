@@ -4,7 +4,7 @@ main {
     align-items: center;
     justify-content: center;
 
-    padding: 46px 185px 54px 185px;
+    padding: 2.88rem 11.56rem 3.38rem 11.56rem;
 
     font-family: var(--fonte-secundaria);
     font-weight: 400;
@@ -29,8 +29,8 @@ main {
     justify-content: center;
 
     width: 100%;
-    margin-top: 46px;
-    padding: 11px 71px 19px 71px;
+    margin-top: 2.88rem;
+    padding: 0.69rem 4.44rem 1.19rem 4.44rem;
 
     border: 3px solid var(--border-saiba-mais);
     border-radius: 15px;
@@ -39,7 +39,7 @@ main {
 }
 
 .h2_saiba_mais {
-    margin: 0 0 6px 0;
+    margin: 0 0 0.38rem 0;
     color: var(--secondary-color);
 }
 
@@ -48,7 +48,7 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 8px;
+    gap: 0.5rem;
 }
 
 .icone_h1 {
@@ -58,12 +58,12 @@ main {
 }
 
 .p_saiba_mais {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     color: var(--teciary-color);
 }
 
 .a_saiba_mais {
-    padding: 6px 25px;
+    padding: 0.38rem 1.56rem;
 
     border-radius: 7px;
 
@@ -76,6 +76,6 @@ main {
 
 .h2_saiba_mais,
 .p_saiba_mais {
-    font-size: 21px;
+    font-size: 1.31rem;
 }
 

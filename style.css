@@ -27,6 +27,7 @@
     --cor-black: #000000;
     --border-saiba-mais: #39A935;
     --cor-conteudo-referencias: #696969;
+    --cor-menu-lateral: #8FCBBF;
 
     --fonte-primaria: 'Arial Rounded MT', Arial, sans-serif;
     --fonte-secundaria: arial, sans-serif;
@@ -408,7 +409,8 @@ address {
 }
 
 .menu-title {
-  margin: 0 0 1rem 0;
+  text-align: center;
+  margin: 1rem 0 2rem 0;
   font-size: 1.25rem;
   color: var(--teciary-color);
 }
@@ -416,13 +418,18 @@ address {
 .menu-progress {
   display: grid;
   gap: 0.5rem;
-  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--cor-menu-lateral);
 }
 
 .menu-progress-label,
 .menu-progress-text {
   font-size: 0.88rem;
   color: var(--tertiary-color);
+}
+
+.menu-progress-text {
+  text-align: center;
+  margin: 10px 0;
 }
 
 .menu-progress-bar {
@@ -439,14 +446,16 @@ address {
 }
 
 .menu-topicos {
-  display: grid;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2.87rem 1.5rem;
 }
 
 .menu-item {
   text-align: left;
-  padding: 0.75rem 0.75rem;
+  margin-bottom: 15px;
+  padding: 10% 4%;
+  width: 100%;
   border-radius: 0.5rem;
   border: 0.06rem solid #e3e3e3;
   background: #fff;
@@ -455,20 +464,27 @@ address {
 }
 
 .menu-item.concluido {
-  background: #e6f3ed;
-  border-color: #cde7dc;
+  background: var(--cor-titulo);
+  color: var(--primary-color);
 }
+
+.menu-links {
+  border-top: 1px solid var(--cor-menu-lateral);
+  padding: 20px 19px;
+} 
+
 
 .menu-links-title {
   font-size: 0.88rem;
   color: var(--tertiary-color);
-  margin-bottom: 0.5rem;
+  margin-bottom: 15px;
 }
 
 .menu-link {
   display: block;
   width: 100%;
   padding: 0.75rem;
+  margin-bottom: 15px;
   border-radius: 0.5rem;
   text-decoration: none;
   color: var(--teciary-color);

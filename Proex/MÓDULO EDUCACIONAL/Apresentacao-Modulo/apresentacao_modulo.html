@@ -57,6 +57,166 @@
         </section>
     </main>
 
+    <!-- Menu lateral acionado pelo botão .img-menu -->
+  <div class="menu-backdrop" hidden></div>
+  <aside class="menu-panel" aria-hidden="true" aria-label="Menu do módulo">
+    <button type="button" class="menu-close" aria-label="Fechar menu">×</button>
+    <h2 class="menu-title">Teorias da Aprendizagem</h2>
+    <div id="progresso" class="menu-progress">
+      <div class="dav">
+      <span class="menu-progress-label">Progresso:</span>
+      <div class="menu-progress-bar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" role="progressbar">
+        <div id="progressoBarra" class="menu-progress-fill" style="width:0%"></div>
+      </div>
+      <span id="progressoTexto" class="menu-progress-label zer">0%</span>
+    </div>
+      <span id="topicosConcluidosTexto" class="menu-progress-text">0 / 4 Tópicos Concluídos</span>
+    </div>
+    <nav class="menu-topicos" aria-label="Tópicos do módulo">
+      <button type="button" class="menu-item" data-topico="1">1. Behaviorismo
+        <img class="bolinha" src="/assets/ComunsReutilizaveis/bolinha_feito.svg" alt="">
+      </button>
+      <button type="button" class="menu-item" data-topico="2">2. Construtivismo
+        <img class="bolinha" src="/assets/ComunsReutilizaveis/bolinha_feito.svg" alt="">
+      </button>
+      <button type="button" class="menu-item" data-topico="3">3. Socioconstrutivismo
+        <img class="bolinha" src="/assets/ComunsReutilizaveis/bolinha_feito.svg" alt="">
+      </button>
+      <button type="button" class="menu-item" data-topico="4">4. Construcionismo
+        <img class="bolinha" src="/assets/ComunsReutilizaveis/bolinha_feito.svg" alt="">
+      </button>
+    </nav>
+    <div class="menu-links">
+      <h3 class="menu-links-title">Links Úteis</h3>
+      <div class="add_icone">
+        <img src="/assets/ComunsReutilizaveis/Mask group.svg" alt="">
+        <a class="menu-link" href="/Proex/MÓDULO EDUCACIONAL/Ficha-tecnica/ficha_tecnica.html">Ficha Técnica</a>
+      </div>
+      <div class="add_icone">
+        <img src="/assets/ComunsReutilizaveis/Mask group (1).svg" alt="">
+        <a class="menu-link" href="/sobre/sobre.html">Sobre</a>
+      </div>
+      <div class="add_icone">
+        <img src="/assets/ComunsReutilizaveis/Mask group (2).svg" alt="">
+        <a class="menu-link" href="#">Suporte</a>
+      </div>
+    </div>
+  </aside>
+
+  <script>
+    (function () {
+      const openBtn = document.querySelector('.img-menu');
+      const panel = document.querySelector('.menu-panel');
+      const backdrop = document.querySelector('.menu-backdrop');
+      const closeBtn = document.querySelector('.menu-close');
+
+      function openMenu() {
+        panel?.setAttribute('aria-hidden', 'false');
+        panel?.classList.add('open');
+        backdrop?.removeAttribute('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeMenu() {
+        panel?.setAttribute('aria-hidden', 'true');
+        panel?.classList.remove('open');
+        backdrop?.setAttribute('hidden', '');
+        document.body.style.overflow = '';
+      }
+
+      openBtn?.addEventListener('click', openMenu);
+      closeBtn?.addEventListener('click', closeMenu);
+      backdrop?.addEventListener('click', closeMenu);
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeMenu();
+      });
+
+      const STORAGE_KEY = 'topicosConcluidos';
+      const TOTAL_TOPICOS = 4;
+      const TOPICOS = ['1', '2', '3', '4'];
+
+      function getTopicosConcluidos() {
+        const stored = localStorage.getItem(STORAGE_KEY);
+        return stored ? JSON.parse(stored) : [];
+      }
+
+      function saveTopicosConcluidos(topicos) {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(topicos));
+      }
+
+      function atualizarProgresso() {
+        const topicosConcluidos = getTopicosConcluidos();
+        const totalConcluidos = topicosConcluidos.length;
+        const porcentagem = Math.round((totalConcluidos / TOTAL_TOPICOS) * 100);
+
+        const progressoBarra = document.getElementById('progressoBarra');
+        const progressoTexto = document.getElementById('progressoTexto');
+        const topicosConcluidosTexto = document.getElementById('topicosConcluidosTexto');
+        const progressBar = document.querySelector('.menu-progress-bar');
+
+        if (progressoBarra) {
+          progressoBarra.style.width = porcentagem + '%';
+        }
+        if (progressoTexto) {
+          progressoTexto.textContent = porcentagem + '%';
+        }
+        if (topicosConcluidosTexto) {
+          topicosConcluidosTexto.textContent = totalConcluidos + ' / ' + TOTAL_TOPICOS + ' Tópicos Concluídos';
+        }
+        if (progressBar) {
+          progressBar.setAttribute('aria-valuenow', porcentagem);
+        }
+      }
+
+      function marcarTopico(topicoId) {
+        const topicosConcluidos = getTopicosConcluidos();
+        if (!topicosConcluidos.includes(topicoId)) {
+          topicosConcluidos.push(topicoId);
+          saveTopicosConcluidos(topicosConcluidos);
+          atualizarProgresso();
+        }
+      }
+
+      function restaurarEstado() {
+        const topicosConcluidos = getTopicosConcluidos();
+        const menuItems = document.querySelectorAll('.menu-item');
+
+        menuItems.forEach(item => {
+          const topicoId = item.getAttribute('data-topico');
+          if (topicosConcluidos.includes(topicoId)) {
+            item.classList.add('completed');
+          }
+        });
+
+        atualizarProgresso();
+      }
+
+      function inicializarTopicos() {
+        const menuItems = document.querySelectorAll('.menu-item');
+
+        menuItems.forEach(item => {
+          item.addEventListener('click', function() {
+            const topicoId = this.getAttribute('data-topico');
+            const topicosConcluidos = getTopicosConcluidos();
+
+            if (!topicosConcluidos.includes(topicoId)) {
+              this.classList.add('completed');
+              marcarTopico(topicoId);
+            }
+          });
+        });
+
+        restaurarEstado();
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', inicializarTopicos);
+      } else {
+        inicializarTopicos();
+      }
+    })();
+  </script>
+
 </body>
 
 </html>

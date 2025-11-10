@@ -37,14 +37,16 @@ main {
 
 .video-apresentacao .titulo {
     margin-bottom: 4rem;
+
     font-size: 3rem;
     text-align: center;
     color: var(--cor-titulo);
 }
 
 .video-apresentacao .descricao {
-    margin-bottom: 1.1rem;
     margin-top: 1rem;
+    margin-bottom: 1.1rem;
+
     font-size: 1.3rem;
     text-align: center;
     text-transform: uppercase;
@@ -54,8 +56,9 @@ main {
 .aula {
     width: 100%;
     aspect-ratio: 16 / 9;
-    border: 3px solid var(--border-video);
+
     border-radius: 1rem;
+    border: 3px solid var(--border-video);
 }
 
 .botoes {
@@ -76,10 +79,14 @@ main {
     width: 80%;
     max-width: 25rem;
     padding: 0.88rem 0;
-    font-size: 1.4rem;
-    font-family: var(--fonte-primaria, sans-serif);
-    font-weight: 400;
+
     border-radius: 0.63rem;
+
+    font-family: var(--fonte-primaria, sans-serif);
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    background-color: transparent;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, transform 0.2s;
 }
@@ -90,9 +97,12 @@ main {
 
 .continuar {
     margin-bottom: 0.7rem;
+
     border: none;
+
     text-transform: uppercase;
     color: var(--setery-color);
+
     background-color: var(--cor-titulo);
 }
 

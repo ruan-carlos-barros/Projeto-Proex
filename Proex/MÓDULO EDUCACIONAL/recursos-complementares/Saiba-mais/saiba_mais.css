@@ -27,19 +27,20 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     width: 100%;
     margin-top: 2.88rem;
     padding: 0.69rem 4.44rem 1.19rem 4.44rem;
 
-    border: 3px solid var(--border-saiba-mais);
     border-radius: 15px;
+    border: 3px solid var(--border-saiba-mais);
 
     background-color: var(--setery-color);
 }
 
 .h2_saiba_mais {
     margin: 0 0 0.38rem 0;
+
+    font-size: 1.31rem;
     color: var(--secondary-color);
 }
 
@@ -59,6 +60,8 @@ main {
 
 .p_saiba_mais {
     margin-bottom: 1rem;
+
+    font-size: 1.31rem;
     color: var(--teciary-color);
 }
 
@@ -73,9 +76,3 @@ main {
     background-color: var(--secondary-color);
     cursor: pointer;
 }
-
-.h2_saiba_mais,
-.p_saiba_mais {
-    font-size: 1.31rem;
-}
-

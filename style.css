@@ -6,8 +6,6 @@
     font-display: swap;
 }
 
-
-
 :root {
     --primary-color: #F9FFF9;
     --secondary-color: #2F735E;
@@ -33,7 +31,6 @@
     --fonte-secundaria: arial, sans-serif;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -51,13 +48,10 @@ video {
     height: auto;
 }
 
-/* Mobile-first media queries scaffolding */
 @media (min-width: 480px) {}
 @media (min-width: 768px) {}
 @media (min-width: 1024px) {}
 @media (min-width: 1280px) {}
-
-/* Header Basic - Contém só o background-image || Exemplo de Tela -- Login -- | */
 
 .basic {
     display: flex;
@@ -70,101 +64,100 @@ video {
     background-image: url(/assets/ComunsReutilizaveis/Header_Fundo.svg);
 }
 
-/* Header Intermediate -  Para as páginas que contém o conteudo "inicio", "Ficha Tecnica" e "Sobre" || Exemplo de Tela -- Ficha Tecnica -- */
-
 .header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    flex-wrap: wrap;
 
-  position: sticky;
-  top: 0;
-  z-index: auto;
-  width: 100%;
-  height: 10vh;
-  padding: 0.25rem 3.5rem;
-  box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: auto;
+    width: 100%;
+    height: 10vh;
+    padding: 0.25rem 3.5rem;
+    box-sizing: border-box;
 
-  font-family: var(--fonte-primaria);
-  font-weight: 400;
+    border: none;
 
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(/assets/ComunsReutilizaveis/Header_Fundo.svg);
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    font-weight: 400;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/assets/ComunsReutilizaveis/Header_Fundo.svg);
 }
 
 .logo {
-  max-width: 13%;
+    max-width: 13%;
 }
 
 .nav-links {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-grow: 1;
-  max-width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 45%;
 }
 
 .nav-links a {
-  display: inline;
+    display: inline;
 
-  margin: 0;
-  padding: 0.5rem 0;
+    margin: 0;
+    padding: 0.5rem 0;
 
-  border: none;
-  border-bottom: 3px solid transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
 
-  font-size: 1.7rem;
-  font-weight: 400;
-  font-family: var(--fonte-primaria);
-  text-align: left;
-  text-decoration: none;
-  color: var(--primary-color);
+    font-family: var(--fonte-primaria);
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-align: left;
+    text-decoration: none;
+    color: var(--primary-color);
 
-  background: none;
-  cursor: pointer;
-  transition: opacity 0.2s ease-in-out;
-  opacity: 0.6; 
+    background: none;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0.6;
 }
 
-/* isso serve para destacar a pagina atual */
 .nav-links a.pagina-atual {
-  opacity: 1;
-  border-color: var(--primary-color);
+    opacity: 1;
+    border-color: var(--primary-color);
 }
 
 .user-menu {
-  display: flex;
-  align-items: center;
-  gap: 3.5rem;
-  padding-right: 1%;
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    padding-right: 1%;
 }
 
 .user-menu img {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 
-  border: none;
+    border: none;
 
-  background: none;
-  cursor: pointer;
+    background: none;
+    cursor: pointer;
 }
 
 .img-perfil,
-.img-menu { 
-  border: none;
-  background: none;
+.img-menu {
+    border: none;
+    background: none;
 }
-
-/* Header Hard - Para as páginas que não contém o menu de navegação || Exemplo de Tela -- Tópico -- */
 
 .hard {
     display: flex;
     justify-content: space-between;
 
+    position: relative;
     width: 100%;
     height: 10vh;
     padding: 0.25rem 3.57rem 0.25rem 2.5rem;
@@ -190,21 +183,19 @@ video {
     width: 16%;
 }
 
-/* Header Start - Contém o menu de navegação, "Pagina Inicial" "Panel" e "Meus Cursos" || Exemplo de Tela -- Pagina Inicial  */
-
 .Start {
     display: flex;
     justify-content: space-between;
 
     position: sticky;
     top: 0;
-
+    width: 100%;
     height: 10vh;
 
     font-family: var(--fonte-primaria);
 
     background-position: 3% 50%, center;
-    background-size: 13% ,cover;
+    background-size: 13%, cover;
     background-repeat: no-repeat;
     background-image: url(/assets/ComunsReutilizaveis/uea_01.svg), url(/assets/ComunsReutilizaveis/Header_Fundo.svg);
 }
@@ -213,7 +204,6 @@ video {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
     width: 100%;
     padding: 0% 32%;
 }
@@ -227,13 +217,18 @@ video {
     cursor: pointer;
 }
 
-/* header text - Recursos Complementares */
+.helo {
+    display: flex;
+    flex-direction: row;
+}
+
 .text {
     display: flex;
     align-items: center;
-    justify-content: center;
-
+    justify-content: space-between;
+    width: 100%;
     height: 10vh;
+    padding: 0 1.5rem;
 
     background-position: center;
     background-size: cover;
@@ -241,33 +236,39 @@ video {
     background-image: url(/assets/ComunsReutilizaveis/Header_Fundo.svg);
 }
 
-.h1_apoio {
-  font-family: var(--fonte-primaria);
-  font-size: 1.5rem;
-  color: var(--primary-color);
+.icones_recursos {
+    margin-right: 0.94rem;
 }
 
-/* Footer normal || Para paginas que contém informacoes || Exemplo -- Ficha Tecnica e sobre.  */
+.icones_recursos_fecha {
+    cursor: pointer;
+}
+
+.h1_apoio {
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
 
 .footer {
-  padding: 3rem 3rem 4rem 3rem; 
+    padding: 3rem 3rem 4rem 3rem;
 
-  border: none;
-  border-radius: 0;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 
-  font-family: var(--fonte-secundaria);
-  color: var(--tertiary-color);
+    font-family: var(--fonte-secundaria);
+    color: var(--tertiary-color);
 
-  background: none;
-  background-color: var(--footer-bg-color);
+    background: none;
+    background-color: var(--footer-bg-color);
 }
 
 .footer-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .footer-logos img {
@@ -275,11 +276,11 @@ video {
 }
 
 .footer-section h5 {
-  margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
 
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--teciary-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--teciary-color);
 }
 
 .footer-section p {
@@ -288,26 +289,26 @@ video {
 }
 
 .footer-section hr {
-  width: 100%;
-  margin-bottom: 0.5rem;
-  border: 1px solid var(--linha2-color);
+    width: 100%;
+    margin-bottom: 0.5rem;
+    border: 1px solid var(--linha2-color);
 }
 
 .footer-section p,
 .footer-section address,
 .footer-section ul {
-  font-size: 1.2rem;
-  line-height: 1.4rem;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
 }
 
 .footer-section ul {
-  list-style: none;
-  font-weight: 400;
-  color: var(--teciary-color);
+    list-style: none;
+    font-weight: 400;
+    color: var(--teciary-color);
 }
 
 .footer-section ul li {
-  margin-bottom: 0.8rem;
+    margin-bottom: 0.8rem;
 }
 
 .footer-section.redes {
@@ -329,12 +330,9 @@ address {
     color: var(--teciary-color);
 }
 
-/* Footer Diferente || Para paginas que outras informacoes || Exemplo -- Pagina inicial e painel  */
-
 .footer-pag-inicial {
     display: flex;
     flex-direction: column;
-
     width: 100%;
 
     font-family: var(--fonte-secundaria);
@@ -364,134 +362,189 @@ address {
 }
 
 .teste {
-    margin: 0;  
+    margin: 0;
 }
 
-/* Menu lateral acionado por .img-menu */
 .menu-backdrop {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(0.13rem);
-  z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
 }
 
 .menu-panel {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: min(22rem, 90vw);
-  height: 100vh;
-  padding: 1.25rem;
-  box-shadow: -0.25rem 0 1rem rgba(0,0,0,0.15);
-  transform: translateX(100%);
-  transition: transform 0.25s ease-in-out;
-  z-index: 1000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: min(22rem, 90vw);
+    height: 100vh;
+    padding: 1.25rem;
+    z-index: 1000;
 
-  background: var(--setery-color);
-  color: var(--teciary-color);
-  font-family: var(--fonte-secundaria);
+    border-radius: 15px 0 0 15px;
+    box-shadow: -4px 0 16px rgba(0, 0, 0, 0.15);
+
+    font-family: var(--fonte-secundaria);
+    color: var(--teciary-color);
+
+    background: var(--setery-color);
+
+    transform: translateX(100%);
+    transition: transform 0.25s ease-in-out;
 }
 
 .menu-panel.open {
-  transform: translateX(0);
+    transform: translateX(0);
 }
 
 .menu-close {
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
-  border: none;
-  background: none;
-  font-size: 1.5rem;
-  line-height: 1;
-  cursor: pointer;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+
+    border: none;
+
+    font-size: 1.5rem;
+    line-height: 1;
+
+    background: none;
+    cursor: pointer;
 }
 
 .menu-title {
-  text-align: center;
-  margin: 1rem 0 2rem 0;
-  font-size: 1.25rem;
-  color: var(--teciary-color);
+    margin: 1rem 0 2rem 0;
+
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--teciary-color);
 }
 
 .menu-progress {
-  display: grid;
-  gap: 0.5rem;
-  border-bottom: 1px solid var(--cor-menu-lateral);
+    display: grid;
+    gap: 0.5rem;
+
+    border-bottom: 1px solid var(--cor-menu-lateral);
+}
+
+.dav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .menu-progress-label,
 .menu-progress-text {
-  font-size: 0.88rem;
-  color: var(--tertiary-color);
+    font-size: 0.88rem;
+    color: var(--tertiary-color);
+}
+
+.zer {
+    margin-left: 2%;
 }
 
 .menu-progress-text {
-  text-align: center;
-  margin: 10px 0;
+    margin: 0.56rem 0;
+    text-align: center;
 }
 
 .menu-progress-bar {
-  width: 100%;
-  height: 0.5rem;
-  border-radius: 9999rem;
-  background: #e6f3ed;
-  overflow: hidden;
+    width: 70%;
+    height: 0.5rem;
+    margin-left: 2%;
+
+    border-radius: 9999rem;
+
+    background: #e6f3ed;
+    overflow: hidden;
 }
 
 .menu-progress-fill {
-  height: 100%;
-  background: var(--secondary-color);
+    height: 100%;
+
+    background: var(--secondary-color);
 }
 
 .menu-topicos {
-  display: flex;
-  flex-direction: column;
-  padding: 2.87rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.94rem;
+    padding: 2.87rem 1.5rem;
 }
 
 .menu-item {
-  text-align: left;
-  margin-bottom: 15px;
-  padding: 10% 4%;
-  width: 100%;
-  border-radius: 0.5rem;
-  border: 0.06rem solid #e3e3e3;
-  background: #fff;
-  color: var(--teciary-color);
-  cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10% 4%;
+    margin-bottom: 0;
+
+    border-radius: 0.5rem;
+    border: 1px solid #e3e3e3;
+
+    font-size: 1rem;
+    text-align: left;
+    color: var(--teciary-color);
+
+    background: #fff;
+    cursor: pointer;
+}
+
+.bolinha {
+    flex-shrink: 0;
+}
+
+.menu-item.completed {
+    background: #22c55e;
+    color: var(--primary-color);
 }
 
 .menu-item.concluido {
-  background: var(--cor-titulo);
-  color: var(--primary-color);
+    background: var(--cor-titulo);
+    color: var(--primary-color);
 }
 
 .menu-links {
-  border-top: 1px solid var(--cor-menu-lateral);
-  padding: 20px 19px;
-} 
+    padding: 1.25rem 1.19rem;
 
+    border-top: 1px solid var(--cor-menu-lateral);
+
+    font-weight: 700;
+}
 
 .menu-links-title {
-  font-size: 0.88rem;
-  color: var(--tertiary-color);
-  margin-bottom: 15px;
+    margin-bottom: 0.94rem;
+
+    font-size: 0.88rem;
+    color: var(--secondary-color);
+}
+
+.add_icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 0.94rem;
+
+    border-radius: 0.5rem;
+    border: 1px solid #e3e3e3;
+
+    background: #fff;
 }
 
 .menu-link {
-  display: block;
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 15px;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  color: var(--teciary-color);
-  border: 0.06rem solid #e3e3e3;
-  background: #fff;
+    margin-left: 0.88rem;
+
+    text-decoration: none;
+    color: var(--secondary-color);
 }
 
 .menu-link + .menu-link {
-  margin-top: 0.5rem;
+    margin-top: 0.5rem;
 }

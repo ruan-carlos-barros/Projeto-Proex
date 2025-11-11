@@ -222,10 +222,12 @@ video {
     flex-direction: row;
 }
 
+/* Header text - Exemplo de tela Texto-apoio, referencias e saiba-mais */
+
 .text {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; 
     width: 100%;
     height: 10vh;
     padding: 0 1.5rem;
@@ -234,6 +236,8 @@ video {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(/assets/ComunsReutilizaveis/Header_Fundo.svg);
+
+    position: relative;
 }
 
 .icones_recursos {
@@ -242,6 +246,12 @@ video {
 
 .icones_recursos_fecha {
     cursor: pointer;
+    position: absolute;
+    right: 2.625rem; 
+    
+    /* Para garantir centralização vertical perfeita, já que ele não é mais um item flex */
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .h1_apoio {
@@ -249,6 +259,7 @@ video {
     font-size: 1.5rem;
     color: var(--primary-color);
 }
+
 
 .footer {
     padding: 3rem 3rem 4rem 3rem;
@@ -459,7 +470,7 @@ address {
 
     border-radius: 9999rem;
 
-    background: #e6f3ed;
+    background: var(--primary-color);
     overflow: hidden;
 }
 
@@ -468,6 +479,8 @@ address {
 
     background: var(--secondary-color);
 }
+
+/* Tópicos do módulo */
 
 .menu-topicos {
     display: flex;
@@ -482,16 +495,15 @@ address {
     justify-content: space-between;
     width: 100%;
     padding: 10% 4%;
-    margin-bottom: 0;
+    margin-bottom: 0;   
 
     border-radius: 0.5rem;
-    border: 1px solid #e3e3e3;
-
+    
     font-size: 1rem;
     text-align: left;
     color: var(--teciary-color);
 
-    background: #fff;
+    background: var(--primary-color);
     cursor: pointer;
 }
 
@@ -500,7 +512,7 @@ address {
 }
 
 .menu-item.completed {
-    background: #22c55e;
+    background: var(--secondary-color);
     color: var(--primary-color);
 }
 
@@ -508,6 +520,8 @@ address {
     background: var(--cor-titulo);
     color: var(--primary-color);
 }
+
+/* Menu-links */
 
 .menu-links {
     padding: 1.25rem 1.19rem;
@@ -532,10 +546,10 @@ address {
     padding: 0.75rem;
     margin-bottom: 0.94rem;
 
-    border-radius: 0.5rem;
-    border: 1px solid #e3e3e3;
+    border-radius: .625rem;
+    box-shadow: 0 0 0.325rem var(--tertiary-color);
 
-    background: #fff;
+    background: var(--primary-color);
 }
 
 .menu-link {
